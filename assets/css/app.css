@@ -6,24 +6,29 @@ body {
     padding: 0;
 }
 
-/* Section supérieure (S'inscrire / Se connecter) */
+
 .top-bar {
     display: flex;
     justify-content: flex-end;
-    background-color: #f5e9f3; /* Couleur rose pâle */
+    background-color: #F2E4EE; 
     padding: 10px 20px;
+    margin-right: 50px;
 }
 
 .top-bar a {
     margin-left: 20px;
     text-decoration: none;
-    color: #9160a7;
+    color: #8C3A76;
     margin-bottom: 50px;
+    font-size : 20px;
 }
 
 /* Barre de navigation principale */
 header {
-    background-color: #8C3A76; /* Couleur violette */
+    background-color: #8C3A76; 
+    font-weight: 200;
+    padding: 30px 60px;
+    
 }
 
 .navbar {
@@ -33,6 +38,7 @@ header {
     max-width: 1200px;
     margin: 0 auto;
     padding: 15px 20px;
+    gap : 10px;
 }
 
 /* Menus de gauche et de droite */
@@ -41,6 +47,7 @@ header {
     list-style: none;
     margin: 0;
     padding: 0;
+    gap : 15px,
 }
 
 .nav-left li, .nav-right li {
@@ -50,7 +57,7 @@ header {
 .nav-left a, .nav-right a {
     text-decoration: none;
     color: #F2E4EE;
-    font-size: 22px;
+    font-size: 20px;
 }
 
 /* Actif (Accueil) */
@@ -59,6 +66,7 @@ header {
     color: #8C3A76;
     padding: 5px 10px;
     border-radius: 20px;
+    font-weight: 400;
 }
 
 /* Logo centré */
@@ -66,6 +74,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 0 15px;
 }
 
 .logo img {
