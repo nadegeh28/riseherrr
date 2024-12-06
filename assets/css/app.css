@@ -6,6 +6,10 @@ body {
     padding: 0;
 }
 
+h1,h2{
+    font-family: 'Dancing Script', sans-serif;
+}
+
 
 .top-bar {
     display: flex;
@@ -27,7 +31,7 @@ body {
 header {
     background-color: #8C3A76; 
     font-weight: 200;
-    padding: 30px 60px;
+    padding: 17px 30px;
     
 }
 
@@ -96,3 +100,54 @@ header {
         margin: 15px 0;
     }
 }
+
+/* Footer global styles */
+.footer {
+    background-color: #8C3A76; /* Couleur violette */
+    color: #F2E4EE;
+    padding: 20px 40px;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 10px; /* Réduit l'espacement entre les colonnes */
+  }
+  
+  .footer h4 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  
+  .footer-help ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-help ul li {
+    margin-bottom: 5px;
+  }
+  
+  .footer-help ul li a,
+  .footer-contact a {
+    color: #F2E4EE;
+    text-decoration: none;
+  }
+  
+  .footer-contact p {
+    margin: 5px 0;
+  }
+  
+  .footer-social {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+  }
+  
+  .footer-social a img {
+    width: 24px;
+    height: 24px;
+  }
+  
