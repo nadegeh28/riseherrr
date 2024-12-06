@@ -256,6 +256,7 @@ header {
     font-size: 20px;
     line-height: 1.5;
     font-weight: 200;
+    
 }
 
 @media (max-width: 768px) {
@@ -270,11 +271,16 @@ header {
     }
 }
 
+.roses{
+    margin-top: 100px;
+}
+
 .rosesname {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    text-align: center;
+    text-align: left;
+
 }
 
 .rosesnamess { 

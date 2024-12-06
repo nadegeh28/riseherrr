@@ -44,7 +44,6 @@
 </div>
 
 
-
 <section class="roses">
     <div class="rosesname">
         <div class="rosesnamess">
