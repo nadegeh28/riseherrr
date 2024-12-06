@@ -6,8 +6,15 @@ body {
     padding: 0;
 }
 
-h1,h2{
+h1{
     font-family: 'Dancing Script', sans-serif;
+    
+}
+
+h2{
+    font-family: 'Dancing Script', sans-serif;
+    font-size:50px; 
+    
 }
 
 
@@ -167,7 +174,7 @@ header {
   /* Image circulaire */
   .welcome-image {
     flex: 1;
-    max-width: 350px; /* Taille maximale de l'image */
+    max-width: 400px; /* Taille maximale de l'image */
     text-align: center;
   }
   
@@ -182,6 +189,7 @@ header {
     flex: 2;
     max-width: 600px;
     text-align: left;
+    font-size: 18px;
   }
   
   .welcome-text h2 {
@@ -224,35 +232,30 @@ header {
 
 
 .circle {
-    width: 120px;
-    height: 120px;
+    width: 130px;
+    height: 130px;
     border-radius: 50%;
+    box-shadow: 0 0 0 20px #8C3A76;
     background-color: white;
     color: #8C3A76;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 24px;
-    margin: 0 auto; /* Centre horizontalement */
+    font-size: 35px;
+    margin: 0 auto;
+    margin-bottom: 35px;
+
 }
 
 
-.outer-circle {
-    width: 140px; /* Un peu plus grand que le cercle intérieur */
-    height: 140px;
-    border-radius: 50%; /* Pour le rendre circulaire */
-    border: 5px solid #8C3A76; /* Couleur et épaisseur de la bordure (mauve) */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 15px; /* Espace avec la description */
-}
+
 
 .description {
     color: #8C3A76;
     margin-top: 15px;
-    font-size: 16px;
+    font-size: 20px;
     line-height: 1.5;
+    font-weight: 200;
 }
 
 @media (max-width: 768px) {

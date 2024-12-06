@@ -7,10 +7,11 @@
     </div>
     <!-- Texte -->
     <div class="welcome-text">
-      <h2>
+      <h1>
          Bienvenue sur Rise Her : un espace où chaque Rose retrouve soutien, écoute et espoir.
        
-      </h2>
+      </h1>
+      <br>
       <p>
         Chaque femme mérite de se sentir en sécurité, écoutée et respectée. Ici, nous vous offrons un espace pour guérir, partager et reprendre le contrôle de votre vie. Ensemble, nous bâtissons un avenir où vous pouvez vous épanouir librement.
       </p>
