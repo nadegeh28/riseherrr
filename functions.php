@@ -4,7 +4,7 @@ function ajouter_styles_personnalises() {
     wp_enqueue_style(
         'style-personnalise',
         get_template_directory_uri() . '/assets/css/app.css',
-        array(), // Pas de dépendance ici
+        array(), 
         '1.0.0'
     );
 }

@@ -10,6 +10,7 @@
     <?php wp_head(); ?> <!-- Ceci est important pour charger le CSS -->
 </head>
 <body <?php body_class(); ?>>
+<div class="main-content">
 <div class="top-bar">
         <a href="#">S'inscrire</a>
         <a href="#">Se connecter</a>
@@ -34,7 +35,7 @@
             </ul>
         </nav>
     </header>
-
+</div>
 </body>
 </html>
 

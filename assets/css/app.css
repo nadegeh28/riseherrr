@@ -4,18 +4,31 @@ body {
     color: #8C3A76;
     margin: 0;
     padding: 0;
+    font-weight:200;
+
 }
 
-h1{
+.marge {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 1200px; /* Largeur maximale du contenu */
+    margin-left: auto; /* Centre horizontalement */
+    margin-right: auto;
+}
+
+
+h1, h2, h3{
     font-family: 'Dancing Script', sans-serif;
     
 }
 
-h2{
-    font-family: 'Dancing Script', sans-serif;
-    font-size:50px; 
-    
+h2.specialites {
+    text-align: center;
+    margin: 0; /* Supprimer les marges par défaut, si nécessaire */
+    padding: 0; /* Supprimer les paddings, si nécessaire */
 }
+
+
 
 
 .top-bar {
@@ -40,8 +53,11 @@ header {
     font-weight: 200;
     padding: 17px 30px;
     margin-bottom: 70px;
+    width: 100%;
     
 }
+
+
 
 .navbar {
     display: flex;
@@ -202,19 +218,19 @@ header {
   flex: 2;
   max-width: 600px;
   text-align: left; /* Le texte reste aligné à gauche */
-  color: #7C4476; /* Couleur violette */
+  color: #8C3A76; /* Couleur violette */
   position: relative; /* Nécessaire pour le positionnement du lien */
 }
 
 .welcome-link {
   font-size: 1rem;
   font-weight: 600;
-  color: #7C4476;
+  color: #8C3A76;
   text-decoration: none;
-  display: inline-block; /* Permet d'affecter la position uniquement au lien */
+  display: inline-block; 
   position: absolute;
-  right: 0; /* Aligne le lien à droite */
-  bottom: 0; /* Aligne le lien en bas */
+  right: 0;
+  bottom: 0; 
 }
 
 .welcome-link:hover {
@@ -253,7 +269,7 @@ header {
 .description {
     color: #8C3A76;
     margin-top: 15px;
-    font-size: 20px;
+    font-size: 19px;
     line-height: 1.5;
     font-weight: 200;
     
@@ -303,4 +319,19 @@ header {
     .rosesnamess { 
         max-width: 100%; 
     }
+}
+
+.rosetext{
+    font-size: 18px;
+    font-weight: 200;
+}
+
+p.specialites {
+    text-align: center; 
+    margin: 0 auto;     
+    padding: 0; 
+    font-size: 20px;
+    margin-top: 20px;  
+
+
 }
