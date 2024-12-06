@@ -1,5 +1,5 @@
 <?php
-// Fonction pour ajouter des styles personnalisés
+
 function ajouter_styles_personnalises() {
     wp_enqueue_style(
         'style-personnalise',
@@ -9,3 +9,7 @@ function ajouter_styles_personnalises() {
     );
 }
 add_action('wp_enqueue_scripts', 'ajouter_styles_personnalises');
+
+
+
+

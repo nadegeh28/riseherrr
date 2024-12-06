@@ -161,6 +161,7 @@ header {
     gap: 20px;
     max-width: 1200px;
     margin: 0 auto;
+    margin-bottom: 150px;
   }
   
   /* Image circulaire */
@@ -211,4 +212,58 @@ header {
 .welcome-link:hover {
   text-decoration: underline;
 }
-  
+
+ 
+.circle-container {
+    background-color: #F2E4EE;
+    padding: 40px;
+    border-radius: 10px;
+
+}
+
+
+
+.circle {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: white;
+    color: #8C3A76;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    margin: 0 auto; /* Centre horizontalement */
+}
+
+
+.outer-circle {
+    width: 140px; /* Un peu plus grand que le cercle intérieur */
+    height: 140px;
+    border-radius: 50%; /* Pour le rendre circulaire */
+    border: 5px solid #8C3A76; /* Couleur et épaisseur de la bordure (mauve) */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px; /* Espace avec la description */
+}
+
+.description {
+    color: #8C3A76;
+    margin-top: 15px;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+    .circle {
+        width: 100px;
+        height: 100px;
+        font-size: 20px;
+    }
+
+    .description {
+        font-size: 14px;
+    }
+}
+
