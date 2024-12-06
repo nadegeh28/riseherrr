@@ -32,6 +32,7 @@ header {
     background-color: #8C3A76; 
     font-weight: 200;
     padding: 17px 30px;
+    margin-bottom: 70px;
     
 }
 
@@ -150,4 +151,64 @@ header {
     width: 24px;
     height: 24px;
   }
+  
+  
+  .welcome-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap; /* Pour s'adapter aux petits écrans */
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Image circulaire */
+  .welcome-image {
+    flex: 1;
+    max-width: 350px; /* Taille maximale de l'image */
+    text-align: center;
+  }
+  
+  .welcome-image img {
+    width: 100%;
+    border-radius: 50%; /* Rend l'image circulaire */
+    object-fit: cover;
+  }
+  
+  /* Texte */
+  .welcome-text {
+    flex: 2;
+    max-width: 600px;
+    text-align: left;
+  }
+  
+  .welcome-text h2 {
+    font-size: 1.8rem;
+    font-weight: 400;
+    margin-bottom: 15px;
+  }
+  
+  .welcome-text {
+  flex: 2;
+  max-width: 600px;
+  text-align: left; /* Le texte reste aligné à gauche */
+  color: #7C4476; /* Couleur violette */
+  position: relative; /* Nécessaire pour le positionnement du lien */
+}
+
+.welcome-link {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #7C4476;
+  text-decoration: none;
+  display: inline-block; /* Permet d'affecter la position uniquement au lien */
+  position: absolute;
+  right: 0; /* Aligne le lien à droite */
+  bottom: 0; /* Aligne le lien en bas */
+}
+
+.welcome-link:hover {
+  text-decoration: underline;
+}
   
