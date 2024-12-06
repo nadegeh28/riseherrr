@@ -270,3 +270,31 @@ header {
     }
 }
 
+.rosesname {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.rosesnamess { 
+    display: flex; 
+    align-items: center; 
+    max-width: 40%; 
+    margin-bottom: 20px;
+}
+
+.rosesnamess img { 
+    width: 120px;
+    margin-bottom: 15px;
+}
+
+.rosenbr {
+    margin-bottom: 15px; 
+}
+
+@media (max-width: 768px) {
+    .rosesnamess { 
+        max-width: 100%; 
+    }
+}
