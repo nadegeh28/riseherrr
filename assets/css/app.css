@@ -468,24 +468,33 @@ h1 .titlee{
     cursor: pointer;
 }
 
+/* Effet hover (survol sans sélection) */
 .options label:hover {
+    background-color: #8C3A76; 
+    color: #F2E4EE; 
+    border-radius: 50px;
+}
+
+/* Nouvelle classe .selected appliquée après le clic */
+.options label.selected {
     background-color: #8C3A76;
     color: #F2E4EE;
     border-radius: 50px;
 }
 
+/* Style appliqué quand l'option est cochée */
 .options input[type="radio"]:checked + label {
     background-color: #8C3A76;
     color: #F2E4EE;
     border-radius: 50px;
 }
 
-/* Custom colors for selected options */
-.options input[type="radio"]:checked + label {
-    background-color: var(--selected-color);
+/* Empêche l'effet hover sur l'option sélectionnée */
+.options input[type="radio"]:checked + label:hover {
+    background-color: #8C3A76;
     color: #F2E4EE;
-    border-radius: 50px;
 }
+
 
 .btn-submit {
     display: inline-block;
