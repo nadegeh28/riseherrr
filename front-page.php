@@ -79,7 +79,7 @@
     </div>
 </section>
 
-<h2 class="specialites">Nos Spécialités</h2>
+<h2 class="title">Nos Spécialités</h2>
 <p class="specialites">Nos spécialistes sont là pour vous écouter et vous accompagner avec bienveillance, en offrant un soutien adapté à chaque étape de votre parcours.</p>
 
 </div>
