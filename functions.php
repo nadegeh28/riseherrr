@@ -15,23 +15,21 @@ function ajouter_styles_personnalises() {
 }
 add_action('wp_enqueue_scripts', 'ajouter_styles_personnalises');
 
-function enqueue_bootstrap() {
-    // Charger Bootstrap JS, il faut s'assurer qu'il soit chargé après jQuery
-    wp_enqueue_script('bootstrap-js', 'https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js', array('jquery'), null, true);
-}
-add_action('wp_enqueue_scripts', 'enqueue_bootstrap');
 
-function my_custom_scripts() {
-    // Charger ton script JS après jQuery
+
+function ajouter_scripts() {
+    wp_enqueue_script('jquery'); // Charge jQuery
     wp_enqueue_script(
         'custom-script', 
         get_template_directory_uri() . '/assets/js/app.js', 
-        array('jquery'), // Assure-toi que jQuery est chargé avant
+        array('jquery'),  // Assure que jQuery est chargé avant ton script
         null, 
-        true
+        true 
     );
 }
-add_action('wp_enqueue_scripts', 'my_custom_scripts');
+add_action('wp_enqueue_scripts', 'ajouter_scripts');
+
+
 
 
 
