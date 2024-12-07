@@ -341,12 +341,11 @@ p.specialites {
     justify-content: center;
     gap: 2rem;
     padding: 2rem;
-    background-color: #fbeaf4; /* Couleur de fond */
   }
   
   .team-member {
     text-align: center;
-    background-color: #ffffff;
+    background-color: #8C3A76;
     border-radius: 10px;
     padding: 1.5rem;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -360,19 +359,18 @@ p.specialites {
   }
   
   .team-member h3 {
-    font-family: 'Cursive', sans-serif;
-    color: #6a205e;
+    color: #F2E4EE;
     margin: 0.5rem 0;
   }
   
   .team-member p {
-    font-family: Arial, sans-serif;
-    color: #333;
+color: #F2E4EE;
     font-size: 0.9rem;
     line-height: 1.5;
   }
   
   .team-member strong {
-    color: #6a205e;
+    color: #F2E4EE;
+    font-weight: bold;
   }
   
