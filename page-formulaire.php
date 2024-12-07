@@ -23,7 +23,7 @@
     <div class="form-group">
         <label for="question1">1. Y a-t-il des personnes ou des situations qui vous mettent particulièrement mal à l’aise ?</label>
         <div class="options">
-            <label for="option1A"><input type="radio" id="option1A" name="question1" value="A">A. Mon partenaire</label>
+            <label for="option1A "><input type="radio" id="option1A" name="question1" value="A">A. Mon partenaire</label>
             <label for="option1B"><input type="radio" id="option1B" name="question1" value="B">B. Un membre de ma famille</label>
             <label for="option1C"><input type="radio" id="option1C" name="question1" value="C">C. Des collègues ou mon supérieur au travail</label>
             <label for="option1D"><input type="radio" id="option1D" name="question1" value="D">D. Mes amis</label>
@@ -134,4 +134,6 @@
 
 </div>
 <?php get_footer(); ?>
+
+
 
