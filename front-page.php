@@ -85,4 +85,19 @@
 </div>
 
 
+<div class="team-section">
+  <div class="team-member">
+  <img src="<?php echo get_template_directory_uri(); ?>/assets/img/img1.jpg" alt="spec">
+    <h3>Claire Marchand</h3>
+    <p><strong>Avocate</strong> en droit des victimes, est là pour vous accompagner avec bienveillance et défendre vos droits avec force.</p>
+  </div>
+  <div class="team-member">
+    <img src="path-to-image2.jpg" alt="Sophie Dubois">
+    <h3>Sophie Dubois</h3>
+    <p><strong>Psychologue</strong> douce et à l'écoute, vous aide à retrouver confiance et sérénité dans un espace sûr et rassurant.</p>
+  </div>
+</div>
+
+
+
 <?php get_footer(); ?>
