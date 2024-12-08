@@ -720,28 +720,57 @@ h4{
   font-weight: bold;
 }
 
-/* Style du conteneur du message de validation */
-#message-container {
-  text-align: center; 
-  margin-bottom: 20px; 
-}
-
-.success-message {
-  display: inline-block; /* Le message sera traité comme un élément en ligne */
-  color: #4CAF50;
-  font-size: 16px;
-  font-weight: bold; 
-  margin-top: 10px; 
-}
-
-.error-message {
-  color: crimson;
-}
-
-
-
 
 .logo-inscr {
 margin-bottom: 40px;
 width: 180px;
+}
+
+
+.login-form {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  position: relative; 
+  border-radius: 10px;
+}
+
+
+
+.email, .password {
+  width: 100%;
+  padding: 12px 30px;
+  border: 1px solid #8C3A76;
+  border-radius: 30px;
+  font-size: 15px;
+  text-align: left; 
+  color: #8C3A76;
+  font-weight: lighter;
+  background-color: #ffffff;
+  outline: none;
+  margin-bottom: 20px;
+}
+
+
+.login-button {
+  position: absolute;
+  bottom: -60px; 
+  right: -50px;
+  padding: 10px 20px;
+  background-color: #8C3A76;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 30px; 
+  font-size: 15px;
+}
+
+
+
+.logo-con {
+  margin-bottom: 40px;
+  width: 180px;
+  display: block;
+  margin-left: auto; 
+  margin-right: auto; 
 }

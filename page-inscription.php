@@ -42,7 +42,7 @@
 
         <input type="hidden" name="submit" value="inscription_form">
         
-        <button type="submit" class="btn-inscription fade-in" id="submit-button">Confirmer</button>
+        <button type="submit" class="btn-inscription fade-in" id="submit-button">S'inscrire</button>
     </form>
 </div>
 
