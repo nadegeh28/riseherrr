@@ -21,7 +21,7 @@ function ajouter_scripts() {
     wp_enqueue_script('jquery'); // Charge jQuery
     wp_enqueue_script(
         'custom-script', 
-        get_template_directory_uri() . '/assets/js/app.js', 
+        get_template_directory_uri() . '/js/app.js', 
         array('jquery'),  // Assure que jQuery est chargé avant ton script
         null, 
         true 
@@ -29,7 +29,7 @@ function ajouter_scripts() {
 }
 add_action('wp_enqueue_scripts', 'ajouter_scripts');
 
-// Fonction pour vérifier si le nom d'utilisateur existe déjà
+// Fonction pour vérifier si le nom d'utilisateur est unique
 function check_unique_username($username) {
     if (username_exists($username)) {
         // Si le nom existe, rajouter un chiffre aléatoire jusqu'à ce qu'il soit unique
@@ -56,11 +56,38 @@ function custom_user_registration($user_login, $user_email, $user_pass) {
 
     // Créer l'utilisateur
     $user_id = wp_insert_user($userdata);
+
+    if (is_wp_error($user_id)) {
+        return $user_id;
+    }
+
+    return $user_id;
 }
 
+// Ajout de la fonction de création d'utilisateur lors de l'envoi du formulaire d'inscription
+function handle_registration_form() {
+    if (isset($_POST['submit']) && $_POST['submit'] === 'inscription_form') {
+        // Récupérer les données du formulaire
+        $email = sanitize_email($_POST['email']);
+        $motdepasse = $_POST['motdepasse'];
+        $motdepasse_confirm = $_POST['motdepasse-confirm'];
 
+        // Vérification des mots de passe
+        if ($motdepasse !== $motdepasse_confirm) {
+            wp_redirect(add_query_arg('error', 'password_mismatch', $_SERVER['REQUEST_URI']));
+            exit;
+        }
 
+        // Créer l'utilisateur et récupérer l'ID
+        $user_id = custom_user_registration('', $email, $motdepasse);
 
-
-
-
+        // Si l'insertion échoue, rediriger avec l'erreur
+        if (is_wp_error($user_id)) {
+            wp_redirect(add_query_arg('error', 'registration_failed', $_SERVER['REQUEST_URI']));
+        } else {
+            wp_redirect('http://localhost:8888/riseher/index.php/profil/');
+        }
+        exit;
+    }
+}
+add_action('init', 'handle_registration_form');

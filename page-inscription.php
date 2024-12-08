@@ -3,7 +3,7 @@
 <div class="container-form fade-in">
     <div id="message-container">
         <?php
-        // Affichage des messages basés sur les paramètres d'URL
+        // Affichage des messages d'erreur basés sur les paramètres d'URL
         if (isset($_GET['error'])) {
             $error_code = sanitize_text_field($_GET['error']);
             $error_message = '';
@@ -21,8 +21,6 @@
             }
 
             echo '<div class="error-message">' . esc_html($error_message) . '</div>';
-        } elseif (isset($_GET['success']) && $_GET['success'] === 'registration_success') {
-            echo '<div class="success-message">Inscription réussie ! Vous pouvez maintenant accéder à votre compte.</div>';
         }
         ?>
     </div>
@@ -80,11 +78,15 @@ if (isset($_POST['submit']) && $_POST['submit'] === 'inscription_form') {
 
     // Vérifier si l'insertion s'est bien passée
     if (is_wp_error($user_id)) {
+        $error_message = $user_id->get_error_message();
+        echo '<div class="error-message">Erreur : ' . $error_message . '</div>';
         wp_redirect(add_query_arg('error', 'registration_failed', $_SERVER['REQUEST_URI']));
+        exit;
     } else {
-        wp_redirect(add_query_arg('success', 'registration_success', $_SERVER['REQUEST_URI']));
+        // Rediriger vers la page de profil après inscription réussie
+        wp_redirect('http://localhost:8888/riseher/index.php/profil/');
+        exit;
     }
-    exit;
 }
 ?>
 
