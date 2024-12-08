@@ -392,7 +392,7 @@ color: #F2E4EE;
   
 h1 .titlee{
     margin-bottom: 100px;
-    text-align: left;
+    text-align: center;
     
   }
 
@@ -523,4 +523,107 @@ h1 .titlee{
     .btn-submit {
         width: 100%;
     }
+}
+
+
+/* Styles pour la section "Qui sommes-nous" */
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 50px auto;
+
+
+
+}
+
+.nous-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.nous-container img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 50%;
+width: 400px;
+}
+
+.nous-text {
+  flex: 2;
+  padding: 20px;
+}
+
+.nous-text h1 {
+  font-size: 2.5em;
+  color: #8b008b; /* Violet foncé pour le titre */
+  margin-bottom: 20px;
+}
+
+.nous-text p {
+  font-size: 1.2em;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .nous-container img {
+      width: 80%;
+  }
+}
+
+.content {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  line-height: 1.8;
+}
+
+.content section {
+  margin-bottom: 40px;
+}
+
+.content section h2 {
+  color: #8b008b;
+  font-size: 2em;
+  margin-bottom: 15px;
+}
+
+.content section p {
+  font-size: 1.1em;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .container {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .content {
+      padding: 15px;
+  }
+
+  .content section h2 {
+      font-size: 1.8em;
+  }
+
+  .content section p {
+      font-size: 1em;
+  }
 }
