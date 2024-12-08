@@ -468,7 +468,12 @@ h1 .titlee{
     cursor: pointer;
 }
 
-
+/* Effet hover (survol sans sélection) */
+.options label:hover {
+    background-color: #8C3A76; 
+    color: #F2E4EE; 
+    border-radius: 50px;
+}
 
 .options label.active {
     background-color: #8C3A76;  /* Couleur de fond quand sélectionné */
@@ -490,7 +495,7 @@ h1 .titlee{
 .btn-submit {
     display: inline-block;
     padding: 10px 20px;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: bold;
     text-align: center;
     border: none;

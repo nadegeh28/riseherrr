@@ -1,9 +1,9 @@
-jQuery(document).ready(function($) {
-    // Quand l'utilisateur clique sur un label
-    $(".options label").click(function() {
-        // Vérifier si le clic fonctionne
-        console.log("Label cliqué : ", $(this).text()); // Affiche le texte du label dans la console
+// Ajout de la vérification si le script est bien chargé
+console.log('Script chargé');
 
+// Ton code JavaScript ici
+jQuery(document).ready(function($) {
+    $(".options label").click(function() {
         // Supprimer la classe "active" de tous les labels
         $(".options label").removeClass("active");
 
@@ -11,4 +11,5 @@ jQuery(document).ready(function($) {
         $(this).addClass("active");
     });
 });
+
 
