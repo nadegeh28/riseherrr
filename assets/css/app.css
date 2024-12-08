@@ -630,3 +630,23 @@ font-weight:bold;
 h4{
   font-weight: bold;
 }
+
+.contact{
+  font-weight: bold;
+}
+
+
+.contact2{
+  font-weight: bold;
+  text-align:center;
+  
+}
+
+.contacttext{
+  font-size:18px;
+}
+
+.emergency-info p {
+  position: relative;
+  bottom: 55px;
+}
