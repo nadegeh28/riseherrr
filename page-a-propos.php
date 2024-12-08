@@ -2,14 +2,13 @@
 
 <div class="marge">
 
-
+<h1 class="noustitle">Qui sommes-nous ?</h1>
 
 <div class="container">
         <div class="nous-container">
         <img src="<?php echo get_template_directory_uri(); ?>/assets/img/imgnous.jpg" alt="img">
         </div>
         <div class="nous-text">
-            <h1>Qui sommes-nous ?</h1>
             <p>
                 Chez Rise Her, nous vous appelons « Roses », parce que vous partagez 
                 avec ces fleurs une force et une résilience uniques. Comme les roses, 
