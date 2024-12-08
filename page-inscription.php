@@ -47,6 +47,7 @@
 </div>
 
 <?php
+
 // Traitement du formulaire d'inscription
 if (isset($_POST['submit']) && $_POST['submit'] === 'inscription_form') {
 
@@ -78,16 +79,18 @@ if (isset($_POST['submit']) && $_POST['submit'] === 'inscription_form') {
 
     // Vérifier si l'insertion s'est bien passée
     if (is_wp_error($user_id)) {
+        // Si une erreur se produit, rediriger avec un message d'erreur
         $error_message = $user_id->get_error_message();
         echo '<div class="error-message">Erreur : ' . $error_message . '</div>';
         wp_redirect(add_query_arg('error', 'registration_failed', $_SERVER['REQUEST_URI']));
         exit;
     } else {
-        // Rediriger vers la page de profil après inscription réussie
-        wp_redirect('http://localhost:8888/riseher/index.php/profil/');
+        // Si l'insertion est réussie, rediriger vers la page de l'archive de l'auteur
+        wp_redirect(get_author_posts_url($user_id)); // Rediriger vers la page de l'archive de l'auteur
         exit;
     }
 }
 ?>
+
 
 <?php get_footer(); ?>

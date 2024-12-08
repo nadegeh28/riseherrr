@@ -30,6 +30,7 @@ function ajouter_scripts() {
 add_action('wp_enqueue_scripts', 'ajouter_scripts');
 
 // Fonction pour vérifier si le nom d'utilisateur est unique
+// Fonction pour vérifier si le nom d'utilisateur est unique
 function check_unique_username($username) {
     if (username_exists($username)) {
         // Si le nom existe, rajouter un chiffre aléatoire jusqu'à ce qu'il soit unique
@@ -40,13 +41,14 @@ function check_unique_username($username) {
 }
 
 // Exemple d'utilisation dans la création de l'utilisateur
-function custom_user_registration($user_login, $user_email, $user_pass) {
-    $rose_number = str_pad(rand(1, 999), 3, '0', STR_PAD_LEFT);  // Génère un numéro aléatoire
-    $rose_username = 'Rose' . $rose_number;
+function custom_user_registration($user_email, $user_pass) {
+    // Créer un nom d'utilisateur unique avec "Rose" suivi d'un nombre
+    $rose_username = 'Rose' . str_pad(rand(1, 999), 3, '0', STR_PAD_LEFT);
 
     // Vérification si le nom est unique
     $rose_username = check_unique_username($rose_username);
 
+    // Créer l'utilisateur
     $userdata = array(
         'user_login' => $rose_username,
         'user_email' => $user_email,
@@ -54,7 +56,6 @@ function custom_user_registration($user_login, $user_email, $user_pass) {
         'display_name' => $rose_username, // Nom d'affichage
     );
 
-    // Créer l'utilisateur
     $user_id = wp_insert_user($userdata);
 
     if (is_wp_error($user_id)) {
@@ -64,7 +65,6 @@ function custom_user_registration($user_login, $user_email, $user_pass) {
     return $user_id;
 }
 
-// Ajout de la fonction de création d'utilisateur lors de l'envoi du formulaire d'inscription
 function handle_registration_form() {
     if (isset($_POST['submit']) && $_POST['submit'] === 'inscription_form') {
         // Récupérer les données du formulaire
@@ -78,16 +78,33 @@ function handle_registration_form() {
             exit;
         }
 
+        // Créer un nom d'utilisateur unique avec "Rose" suivi d'un nombre
+        $rose_number = str_pad(rand(1, 999), 3, '0', STR_PAD_LEFT);  // Génère un numéro aléatoire entre 001 et 999
+        $rose_username = 'Rose' . $rose_number;
+
+        // Convertir le nom d'utilisateur en minuscule
+        $rose_username = strtolower($rose_username);
+
         // Créer l'utilisateur et récupérer l'ID
-        $user_id = custom_user_registration('', $email, $motdepasse);
+        $userdata = array(
+            'user_login' => $rose_username,   // Nom d'utilisateur unique
+            'user_email' => $email,           // Adresse e-mail
+            'user_pass' => $motdepasse,       // Mot de passe
+            'display_name' => $rose_username, // Nom d'affichage
+        );
+
+        $user_id = wp_insert_user($userdata);
 
         // Si l'insertion échoue, rediriger avec l'erreur
         if (is_wp_error($user_id)) {
             wp_redirect(add_query_arg('error', 'registration_failed', $_SERVER['REQUEST_URI']));
+            exit;
         } else {
-            wp_redirect('http://localhost:8888/riseher/index.php/profil/');
+            // Rediriger vers la page de profil de l'utilisateur (page /author/{rose_username}/)
+            wp_redirect(home_url('/index.php/author/' . trim($rose_username))); // Enlever les espaces avant et après
+            exit;
         }
-        exit;
     }
 }
 add_action('init', 'handle_registration_form');
+
