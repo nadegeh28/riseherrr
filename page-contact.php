@@ -61,13 +61,26 @@
     <div class="team-member">
         <img src="<?php echo get_template_directory_uri(); ?>/assets/img/avocate.jpg" alt="spec">
         <h3>Claire Marchand</h3>
-        <p><strong>Avocate</strong> en droit des victimes, est là pour vous accompagner avec bienveillance et défendre vos droits avec force.</p>
+        <p class="teamcontact"><strong>E-mail :</strong>  claire.marchand@avocat.com
+        </p>
+        <p class="teamcontact"><strong>Numéro de téléphone : </strong>  +32 487 654 321
+        </p>
+        <p class="teamcontact"><strong>Adresse :</strong>  45 Avenue de la Liberté,
+        1050 Bruxelles, Belgique
+        </p>
     </div>
     <div class="team-member">
         <img src="<?php echo get_template_directory_uri(); ?>/assets/img/psychologue.jpg" alt="spec">
         <h3>Sophie Dubois</h3>
-        <p><strong>Psychologue</strong> douce et à l'écoute, vous aide à retrouver confiance et sérénité dans un espace sûr et rassurant.</p>
-    </div>
+
+        <p class="teamcontact"><strong>E-mail :</strong>  sophie.dubois@support.com
+        </p>
+        <p class="teamcontact"><strong>Numéro de téléphone : </strong>  +32 478 123 456
+        </p>
+        <p class="teamcontact"><strong>Adresse :</strong> 12 Rue des Roses,
+        1000 Bruxelles, Belgique
+        </p>
+
 </div>
 
 </section>
