@@ -121,3 +121,14 @@ function rediriger_apres_connexion($redirect_to, $request, $user) {
 add_filter('login_redirect', 'rediriger_apres_connexion', 10, 3);
 
 
+function afficher_nom_utilisateur() {
+    if (is_user_logged_in()) {
+        $current_user = wp_get_current_user();
+        // Retourne juste le nom d'utilisateur sans balises HTML
+        return $current_user->user_login;
+    } else {
+        return 'Vous devez être connecté pour voir votre profil.';
+    }
+}
+add_shortcode('nom_utilisateur', 'afficher_nom_utilisateur');
+
