@@ -110,44 +110,14 @@ add_action('init', 'handle_registration_form');
 
 
 
-
-
-
-
-
-function handle_custom_login() {
-    // Vérification du nonce pour la sécurité
-    if (!isset($_POST['custom_login_nonce_field']) || !wp_verify_nonce($_POST['custom_login_nonce_field'], 'custom_login_nonce')) {
-        wp_redirect(home_url('/login?login=nonce_failed')); // Rediriger vers la page de login en cas de nonce invalide
-        exit;
+function rediriger_apres_connexion($redirect_to, $request, $user) {
+    // Vérifie que l'utilisateur est un utilisateur normal, pas un administrateur
+    if (!current_user_can('administrator', $user->ID)) {
+        // Redirige vers la page de profil de l'utilisateur (par exemple 'author.php' avec l'ID de l'utilisateur)
+        $redirect_to = (home_url('/index.php/author/' . $user->user_login));
     }
-
-    // Récupérer les informations de connexion
-    $creds = array(
-        'user_login'    => $_POST['user_email'],
-        'user_password' => $_POST['user_password'],
-    );
-
-    // Tente de connecter l'utilisateur
-    $user = wp_signon($creds, false);
-
-    // Si la connexion échoue, rediriger vers la page de connexion avec un message d'échec
-    if (is_wp_error($user)) {
-        wp_redirect(home_url('/login?login=failed'));
-        exit;
-    }
-
-    // Si la connexion est réussie, rediriger vers la page de profil de l'utilisateur
-    wp_redirect (home_url('/index.php/author/' . trim($user->user_login)));
-    exit;
+    return $redirect_to;
 }
-
-// Enregistrer les actions pour l'utilisateur non connecté et connecté
-add_action('admin_post_nopriv_custom_login', 'handle_custom_login');
-add_action('admin_post_custom_login', 'handle_custom_login');
+add_filter('login_redirect', 'rediriger_apres_connexion', 10, 3);
 
 
-
-
-
-wp_redirect (home_url('/index.php/author/' . trim($user->user_login)));
