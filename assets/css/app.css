@@ -778,3 +778,119 @@ width: 180px;
 .note{
   font-size: 10px;
 }
+
+.author-message{
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.authorimg {
+  float: left; /* Place l'icône à gauche */
+  width: 120px; 
+  margin-right: 15px; /* Espace entre l'icône et le texte */
+  line-height: 1; /* Aligne verticalement l'icône */
+}
+
+/* Conteneur principal */
+.container {
+  width: 600px;
+  height: 800px;
+  background-color: #8C3A76;
+  border-radius: 25px; 
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin: 50px auto;
+  margin-bottom: 60px;
+}
+
+.question {
+  font-size: 16px;
+  color: #F2E4EE;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+/* Conteneur pour la zone de texte et le bouton */
+.input-container {
+  width: 300px;
+  height: 400px;
+  background-color: #FFFFFF;
+  border-radius: 25px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 350px;
+  box-sizing: border-box;
+}
+
+/* Zone de texte */
+.text-input {
+  width: 500px;
+  height: 600px;
+  border: none;
+  resize: none;
+  border-radius: 10px;
+  font-size: 16px;
+  padding: 10px;
+  color: #8C3A76;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+.update-button {
+  width: auto; /* Laisse le bouton s'ajuster à son contenu */
+  min-width: 120px; /* Largeur minimale pour éviter les coupures */
+  align-self: flex-end;
+  background-color: #F2E4EE;
+  color: #8C3A76;
+  border: none;
+  border-radius: 50px;
+  padding: 10px 15px; /* Plus d'espace pour le texte */
+  font-size: 14px;
+  cursor: pointer;
+  text-align: center; /* Centrer le texte */
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+
+
+
+
+
+
+.title-underline{
+  border: none;
+  border-top: 2px solid #8C3A76;
+  margin: 10px 0 20px;
+}
+
+.mentions-legales-container {
+  color: #8C3A76;
+  font-size: 20px;
+}
+
+.mentions-legales-container h1 {
+  color: #8C3A76;
+  font-size: 45px;
+  margin-bottom: 80px;
+  text-align: center;
+}
+
+
+.mentions-legales-container p {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.mentions-legales-container a {
+  color: #8C3A76; 
+  text-decoration: none;
+}
+
+
+
