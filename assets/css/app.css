@@ -863,11 +863,14 @@ width: 180px;
 
 
 
-.title-underline{
+.title-underline {
   border: none;
-  border-top: 2px solid #8C3A76;
+  border-top: 1px solid #8C3A76; /* Couleur originale */
   margin: 10px 0 20px;
+  background: none; /* Assurez-vous qu'aucun background transparent n’interfère */
+  opacity: 1; /* Forcer une opacité complète */
 }
+
 
 .mentions-legales-container {
   color: #8C3A76;
