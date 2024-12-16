@@ -132,3 +132,4 @@ function afficher_nom_utilisateur() {
 }
 add_shortcode('nom_utilisateur', 'afficher_nom_utilisateur');
 
+

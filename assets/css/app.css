@@ -867,8 +867,8 @@ width: 180px;
   border: none;
   border-top: 1px solid #8C3A76; /* Couleur originale */
   margin: 10px 0 20px;
-  background: none; /* Assurez-vous qu'aucun background transparent n’interfère */
-  opacity: 1; /* Forcer une opacité complète */
+  background: none; 
+  opacity: 1; 
 }
 
 
@@ -895,5 +895,27 @@ width: 180px;
   text-decoration: none;
 }
 
+h6{
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.date{
+  font-weight: 700;
+}
+
+.italique {
+  font-style: italic;
+}
 
 
+.conditions-generales-container{
+
+  color: #8C3A76;
+  font-size: 45px;
+  margin-bottom: 80px;
+  text-align: center;
+}
+
+.paragcond{
+  margin-bottom: 20px;
+}
