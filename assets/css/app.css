@@ -898,6 +898,7 @@ width: 180px;
 h6{
   font-weight: 700;
   margin-bottom: 20px;
+  font-size: 20px;
 }
 .date{
   font-weight: 700;
@@ -918,4 +919,12 @@ h6{
 
 .paragcond{
   margin-bottom: 20px;
+}
+
+
+.blog-container{
+  color: #8C3A76;
+  font-size: 45px;
+  margin-bottom: 80px;
+  text-align: center;
 }
