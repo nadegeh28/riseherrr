@@ -132,4 +132,9 @@ function afficher_nom_utilisateur() {
 }
 add_shortcode('nom_utilisateur', 'afficher_nom_utilisateur');
 
+function riseher_enqueue_styles() {
+    wp_enqueue_style('riseher-style', get_stylesheet_uri());
+}
+
+add_action('wp_enqueue_scripts', 'riseher_enqueue_styles');
 
