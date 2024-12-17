@@ -3,11 +3,10 @@
     <!-- Section Help -->
     <div class="footer-help">
       <h2>Help</h2>
-      <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logoclair.jpg" alt="logo">
       <ul>
-        <li><a href="mentions-legales.php">Mentions Légales</a></li>
-        <li><a href="https://riseher.emu.isfsc.be/conditions-generales/#">Conditions générales</a></li>
-        <li><a href="a-propos.php">À propos</a></li>
+        <li><a href="https://riseher.emu.isfsc.be/mentions-legales/">Mentions Légales</a></li>
+        <li><a href="https://riseher.emu.isfsc.be/conditions-generales/">Conditions générales</a></li>
+        <li><a href="https://riseher.emu.isfsc.be/a-propos/">À propos</a></li>
       </ul>
     </div>
     <!-- Section Contact -->

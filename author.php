@@ -4,8 +4,13 @@
 
 <div class="author-profile">
 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logowelleness.png" alt="Riseher" class="authorimg">
+
         <div class="author-info">
-            <h1 class="author-name"><?php echo esc_html($current_user->user_login); ?></h1>
+        <?php
+
+$author = get_queried_object();
+?>
+            <h1 class="author-name"><?php echo esc_html($author->user_login); ?></h1>
             <p class="note">
                 Pour conserver votre anonymat, votre utilisateur sera sous le nom de <strong><?php echo esc_html($current_user->user_login); ?></strong>.
             </p>

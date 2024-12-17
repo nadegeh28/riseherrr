@@ -38,14 +38,8 @@
             </ul>
         </nav>
         <div class="auth-buttons fade-in">
-            <?php if (is_user_logged_in()) : ?>
-                <?php $current_user = wp_get_current_user(); ?>
-                <a href="<?php echo 'http://localhost:8888/wellness-site/index.php/author/' . $current_user->user_login; ?>" class="btn btn-profile">Mon Profil</a>
-                <a href="<?php echo wp_logout_url('http://localhost:8888/wellness-site/index.php/accueil/'); ?>" class="btn btn-logout">Se déconnecter</a>
-            <?php else : ?>
                 <a href="https://riseher.emu.isfsc.be/connexion/" class="btn btn-login">Se connecter</a>
                 <a href="https://riseher.emu.isfsc.be/inscription/" class="btn btn-register">S'inscrire</a>
-            <?php endif; ?>
         </div>
     </header>
 
