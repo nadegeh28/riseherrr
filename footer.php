@@ -5,7 +5,7 @@
       <h2>Help</h2>
       <ul>
         <li><a href="mentions-legales.php">Mentions Légales</a></li>
-        <li><a href="https://riseher.emu.isfsc.be/conditions-generales/">Conditions générales</a></li>
+        <li><a href="https://riseher.emu.isfsc.be/conditions-generales/#">Conditions générales</a></li>
         <li><a href="a-propos.php">À propos</a></li>
       </ul>
     </div>

@@ -22,19 +22,19 @@
     <header>
         <nav class="navbar">
             <ul class="nav-left">
-                <li><a href="#" class="active">Accueil</a></li>
-                <li><a href="#">À propos</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="https://riseher.emu.isfsc.be">Accueil</a></li>
+                <li><a href="https://riseher.emu.isfsc.be/a-propos/">À propos</a></li>
+                <li><a href="https://riseher.emu.isfsc.be/contact/">Contact</a></li>
             </ul>
             
             <div class="logo">
-                <img src="logo.png" alt="Logo">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logoclair.jpg" alt="logo">
             </div>
             
             <ul class="nav-right">
                 <li><a href="#">Forum</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Formulaire</a></li>
+                <li><a href="https://riseher.emu.isfsc.be/blog/">Blog</a></li>
+                <li><a href="https://riseher.emu.isfsc.be/formulaire/">Formulaire</a></li>
             </ul>
         </nav>
         <div class="auth-buttons fade-in">
@@ -43,8 +43,8 @@
                 <a href="<?php echo 'http://localhost:8888/wellness-site/index.php/author/' . $current_user->user_login; ?>" class="btn btn-profile">Mon Profil</a>
                 <a href="<?php echo wp_logout_url('http://localhost:8888/wellness-site/index.php/accueil/'); ?>" class="btn btn-logout">Se déconnecter</a>
             <?php else : ?>
-                <a href="http://localhost:8888/wellness-site/index.php/login/" class="btn btn-login">Se connecter</a>
-                <a href="http://localhost:8888/wellness-site/index.php/register/" class="btn btn-register">S'inscrire</a>
+                <a href="https://riseher.emu.isfsc.be/connexion/" class="btn btn-login">Se connecter</a>
+                <a href="https://riseher.emu.isfsc.be/inscription/" class="btn btn-register">S'inscrire</a>
             <?php endif; ?>
         </div>
     </header>

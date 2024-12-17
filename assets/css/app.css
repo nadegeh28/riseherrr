@@ -89,13 +89,13 @@ header {
     font-size: 20px;
 }
 
-/* Actif (Accueil) */
-.nav-left .active {
-    background-color: #F2E4EE;
-    color: #8C3A76;
-    padding: 5px 10px;
-    border-radius: 20px;
-    font-weight: 400;
+
+nav ul li a:hover {
+  background-color: #F2E4EE;
+  color: #8C3A76;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-weight: 400;
 }
 
 /* Logo centré */
