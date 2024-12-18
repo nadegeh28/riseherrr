@@ -9,6 +9,7 @@
 
 
 
+    <?php wp_head(); ?>
 
 </head>
 <body <?php body_class(); ?>>
@@ -22,7 +23,7 @@
                 <a href="<?php echo wp_logout_url('https://riseher.emu.isfsc.be/'); ?>" class="btn btn-logout">Se déconnecter</a>
             <?php else : ?>
                 <a href="https://riseher.emu.isfsc.be/connection/" class="btn btn-login">Se connecter</a>
-                <a href="http://localhost:8888/wellness-site/index.php/inscription/" class="btn btn-register">S'inscrire</a>
+                <a href="https://riseher.emu.isfsc.be//inscription/" class="btn btn-register">S'inscrire</a>
             <?php endif; ?>
     </div>
 

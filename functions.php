@@ -138,6 +138,4 @@ function riseher_enqueue_styles() {
 
 add_action('wp_enqueue_scripts', 'riseher_enqueue_styles');
 
-
-
-
+?>
