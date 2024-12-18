@@ -15,8 +15,8 @@
 <body <?php body_class(); ?>>
 <div class="main-content">
 <div class="top-bar">
-        <a href="#">S'inscrire</a>
-        <a href="#">Se connecter</a>
+        <a href="https://riseher.emu.isfsc.be/inscription/">S'inscrire</a>
+        <a href="https://riseher.emu.isfsc.be/connexion/">Se connecter</a>
     </div>
 
     <header>
@@ -28,7 +28,7 @@
             </ul>
             
             <div class="logo">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logoclair.jpg" alt="logo">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logoclair.png" alt="logo">
             </div>
             
             <ul class="nav-right">
