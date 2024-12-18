@@ -14,8 +14,23 @@
 </head>
 <body <?php body_class(); ?>>
 <div class="main-content">
+<?php
+if (is_user_logged_in()) {
+    echo '<p style="color:green;">L’utilisateur est connecté</p>';
+} else {
+    echo '<p style="color:red;">L’utilisateur n’est pas connecté</p>';
+}
+?>
+
 <div class="top-bar">
-<?php add_auth_links(); ?>
+<?php if (is_user_logged_in()) : ?>
+                <?php $current_user = wp_get_current_user(); ?>
+                <a href="<?php echo 'https://riseher.emu.isfsc.be/author/' . $current_user->user_login; ?>" class="btn btn-profile">Mon Profil</a>
+                <a href="<?php echo wp_logout_url('https://riseher.emu.isfsc.be/'); ?>" class="btn btn-logout">Se déconnecter</a>
+            <?php else : ?>
+                <a href="https://riseher.emu.isfsc.be/connection/" class="btn btn-login">Se connecter</a>
+                <a href="http://localhost:8888/wellness-site/index.php/inscription/" class="btn btn-register">S'inscrire</a>
+            <?php endif; ?>
     </div>
 
     <header>
@@ -44,6 +59,26 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
 
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Sélectionne les boutons d'authentification
+    var profileButton = document.querySelector('.btn-profile');
+    var loginButton = document.querySelector('.btn-login');
+    var registerButton = document.querySelector('.btn-register');
+
+    // Vérifie si le corps de la page a la classe 'logged-in'
+    if (document.body.classList.contains('logged-in')) {
+        // Si l'utilisateur est connecté, affiche le bouton "Mon Profil" et masque les autres
+        if (profileButton) profileButton.style.display = 'block';
+        if (loginButton) loginButton.style.display = 'none';
+        if (registerButton) registerButton.style.display = 'none';
+    } else {
+        // Si l'utilisateur n'est pas connecté, affiche les boutons "Se connecter" et "S'inscrire" et masque le bouton "Mon Profil"
+        if (profileButton) profileButton.style.display = 'none';
+        if (loginButton) loginButton.style.display = 'block';
+        if (registerButton) registerButton.style.display = 'block';
+    }
+});
 </script>
 </body>
 </html>
