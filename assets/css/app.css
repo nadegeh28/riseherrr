@@ -228,7 +228,7 @@ nav ul li a:hover {
   font-size: 1rem;
   font-weight: 600;
   color: #8C3A76;
-  text-decoration: none;
+  text-decoration: hidden;
   display: inline-block; 
   position: absolute;
   right: 0;

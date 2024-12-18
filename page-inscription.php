@@ -26,7 +26,7 @@
     </div>
 
     <form id="inscription-form" method="post" action="<?php echo esc_url($_SERVER['REQUEST_URI']); ?>" class="formulaire-inscription">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logowelleness.png" alt="Riseher" class="logo-inscr">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logorempfonce.png" alt="Riseher" class="logo-inscr">
         
         <div class="form-group">
             <input type="email" id="email" name="email" required class="form-input" placeholder="Adresse E-mail">

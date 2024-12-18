@@ -18,7 +18,7 @@
         Chaque femme mérite de se sentir en sécurité, écoutée et respectée. Ici, nous vous offrons un espace pour guérir, partager et reprendre le contrôle de votre vie. Ensemble, nous bâtissons un avenir où vous pouvez vous épanouir librement.
       </p>
       <br><br>
-      <a href="qui-sommes-nous.php" class="welcome-link">
+      <a href="https://riseher.emu.isfsc.be/a-propos/" class="welcome-link">
         <?php echo "Qui sommes nous ?"; ?>
       </a>
     </div>

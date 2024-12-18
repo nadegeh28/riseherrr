@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 <form action="<?php echo esc_url(site_url('wp-login.php', 'login_post')); ?>" method="post" class="login-form fade-in">
-    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logowelleness.png" alt="Riseher" class="logo-con">
+    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logorempfonce.png" alt="Riseher" class="logo-con">
 
     <input type="hidden" name="action" value="login">
     

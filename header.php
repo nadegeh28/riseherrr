@@ -37,10 +37,6 @@
                 <li><a href="https://riseher.emu.isfsc.be/formulaire/">Formulaire</a></li>
             </ul>
         </nav>
-        <div class="auth-buttons fade-in">
-                <a href="https://riseher.emu.isfsc.be/connexion/" class="btn btn-login">Se connecter</a>
-                <a href="https://riseher.emu.isfsc.be/inscription/" class="btn btn-register">S'inscrire</a>
-        </div>
     </header>
 
 </div>
