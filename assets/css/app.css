@@ -48,6 +48,26 @@ h1, h2, h3{
     font-size : 20px;
 }
 
+
+.log a{
+  display: flex;
+  justify-content: flex-end;
+  background-color: #F2E4EE; 
+  padding: 10px 20px;
+  margin-right: 50px;
+  font-weight:bolder ;
+}
+
+.top-bar:hover{
+  display: flex;
+  justify-content: flex-end;
+  background-color: #8C3A76; 
+  padding: 10px 20px;
+  margin-right: 50px;
+}
+
+
+
 /* Barre de navigation principale */
 header {
     background-color: #8C3A76; 
@@ -228,7 +248,7 @@ nav ul li a:hover {
   font-size: 1rem;
   font-weight: 600;
   color: #8C3A76;
-  text-decoration: hidden;
+  text-decoration: none;
   display: inline-block; 
   position: absolute;
   right: 0;
