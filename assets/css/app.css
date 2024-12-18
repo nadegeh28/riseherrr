@@ -49,21 +49,20 @@ h1, h2, h3{
 }
 
 
-.log a{
+.log{
   display: flex;
   justify-content: flex-end;
   background-color: #F2E4EE; 
   padding: 10px 20px;
   margin-right: 50px;
-  font-weight:bolder ;
 }
 
-.top-bar:hover{
-  display: flex;
-  justify-content: flex-end;
-  background-color: #8C3A76; 
-  padding: 10px 20px;
-  margin-right: 50px;
+.log:hover{
+  background-color: #8C3A76;
+  color: #F2E4EE;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-weight: 400;
 }
 
 
