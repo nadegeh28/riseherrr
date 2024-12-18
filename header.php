@@ -10,22 +10,15 @@
 
 
 
-    <?php wp_head(); ?> <!-- Ceci est important pour charger le CSS -->
 </head>
 <body <?php body_class(); ?>>
 <div class="main-content">
-<?php
-if (is_user_logged_in()) {
-    echo '<p style="color:green;">L’utilisateur est connecté</p>';
-} else {
-    echo '<p style="color:red;">L’utilisateur n’est pas connecté</p>';
-}
-?>
+
 
 <div class="top-bar">
 <?php if (is_user_logged_in()) : ?>
-                <?php $current_user = wp_get_current_user(); ?>
-                <a href="<?php echo 'https://riseher.emu.isfsc.be/author/' . $current_user->user_login; ?>" class="btn btn-profile">Mon Profil</a>
+    <?php $current_user = wp_get_current_user(); ?>
+                <a href="<?php echo 'https://riseher.emu.isfsc.be/author/' . $author->user_login; ?>" class="btn btn-profile">Mon Profil</a>
                 <a href="<?php echo wp_logout_url('https://riseher.emu.isfsc.be/'); ?>" class="btn btn-logout">Se déconnecter</a>
             <?php else : ?>
                 <a href="https://riseher.emu.isfsc.be/connection/" class="btn btn-login">Se connecter</a>

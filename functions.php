@@ -139,21 +139,5 @@ function riseher_enqueue_styles() {
 add_action('wp_enqueue_scripts', 'riseher_enqueue_styles');
 
 
-function add_auth_links() {
-    if (is_user_logged_in()) {
-        $current_user = wp_get_current_user();
-        $profile_url = 'https://riseher.emu.isfsc.be/author/' . $author->user_login;
-        $logout_url = wp_logout_url('https://riseher.emu.isfsc.be/'); 
-
-        echo '<a href="' . esc_url($profile_url) . '" class="btn btn-profile">Mon Profil</a>';
-        echo '<a href="' . esc_url($logout_url) . '" class="btn btn-logout">Se déconnecter</a>';
-    } else {
-        $login_url = 'https://riseher.emu.isfsc.be/connexion/';
-        $register_url = 'https://riseher.emu.isfsc.be/inscription/';
-
-        echo '<a href="' . esc_url($login_url) . '" class="btn btn-login">Se connecter</a>';
-        echo '<a href="' . esc_url($register_url) . '" class="btn btn-register">S\'inscrire</a>';
-    }
-}
 
 
