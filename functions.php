@@ -138,3 +138,27 @@ function riseher_enqueue_styles() {
 
 add_action('wp_enqueue_scripts', 'riseher_enqueue_styles');
 
+
+function custom_body_classes($classes) {
+    if (is_user_logged_in()) {
+        $classes[] = 'logged-in';
+    } else {
+        $classes[] = 'logged-out';
+    }
+    return $classes;
+}
+add_filter('body_class', 'custom_body_classes');
+
+function add_auth_links() {
+    if (is_user_logged_in()) {
+        $logout_url = wp_logout_url(home_url());
+        $my_account_url = get_permalink(get_option('woocommerce_myaccount_page_id')); // Remplacez ceci par votre URL de compte utilisateur
+        echo '<a href="' . esc_url($my_account_url) . '" class="btn-profile">Mon compte</a>';
+        echo '<a href="' . esc_url($logout_url) . '" class="btn-logout">Déconnexion</a>';
+    } else {
+        $register_url = wp_registration_url();
+        $login_url = wp_login_url();
+        echo '<a href="' . esc_url($register_url) . '" class="btn-register">S\'inscrire</a>';
+        echo '<a href="' . esc_url($login_url) . '" class="btn-login">Se connecter</a>';
+    }
+}
