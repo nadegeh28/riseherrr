@@ -1,63 +1,114 @@
+/* Style de base pour le body */
 body {
-    font-family: 'Poppins', sans-serif;
-    background-color: #F2E4EE;
-    color: #8C3A76;
-    margin: 0;
-    padding: 0;
-    font-weight:200;
-
+  font-family: 'Poppins', sans-serif;
+  background-color: #F2E4EE; /* Couleur de fond */
+  color: #8C3A76; /* Couleur principale du texte */
+  margin: 0;
+  padding: 0;
+  font-weight: 200;
+  line-height: 1.6; /* Espacement entre les lignes */
+  box-sizing: border-box; /* Inclut padding/margin dans la taille des éléments */
 }
 
+
+
+/* Conteneur général pour centrer le contenu */
 .marge {
-    box-sizing: border-box;
-    width: 100%;
-    max-width: 1200px; /* Largeur maximale du contenu */
-    margin-left: auto; /* Centre horizontalement */
-    margin-right: auto;
+  width: 100%;
+  max-width: 1200px; /* Largeur maximale pour le contenu */
+  margin: 0 auto; /* Centre horizontalement */
+  padding: 20px; /* Ajoute de l'espace autour */
 }
 
-
-h1, h2, h3{
-    font-family: 'Dancing Script', sans-serif;
-    
+/* Styles pour les titres */
+h1, h2{
+  font-family: 'Dancing Script', sans-serif;
+  color: #8C3A76;
+  margin: 0;
+  padding: 0;
+  text-align: left; /* Centre tous les titres */
 }
 
+h3{
+  font-family: 'Dancing Script', sans-serif;
+  color: #8C3A76;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+/* Classe spécifique pour les titres principaux */
 .title {
-    text-align: center;
-    margin: 0; 
-    padding: 0; 
+  text-align: center;
+  margin: 0; 
+  padding: 0; 
+  font-size: 2rem; /* Taille standard pour les titres */
+}
 
+/* Images responsives */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block; /* Évite les espaces autour */
+  margin: 10px 0;
+}
+
+/* Responsive : Tablettes */
+@media (max-width: 768px) {
+  body {
+      font-size: 15px; /* Réduit légèrement la taille des polices */
+  }
+  h1, h2, h3 {
+      font-size: 1.8rem; /* Ajuste les tailles des titres */
+  }
+  .marge {
+      padding: 15px; /* Réduit les marges internes */
+  }
+}
+
+/* Responsive : Mobiles */
+@media (max-width: 480px) {
+  body {
+      font-size: 14px; /* Taille réduite pour les petits écrans */
+      line-height: 1.4; /* Espacement plus compact */
+  }
+  h1, h2, h3 {
+      font-size: 1.5rem; /* Réduit encore la taille des titres */
+  }
+  .marge {
+      padding: 10px; /* Réduit encore l'espacement */
+  }
+}
+
+.footer-titre{
+  text-align: left;
+  font-size: 35px;
+  font-family: 'Dancing Script', sans-serif;
+  
 }
 
 
 
-
+/* Top-bar */
 .top-bar {
-    display: flex;
-    justify-content: flex-end;
-    background-color: #F2E4EE; 
-    padding: 10px 20px;
-    margin-right: 50px;
+  display: flex;
+  justify-content: flex-end;
+  background-color: #F2E4EE;
+  padding: 10px 20px;
+  margin-right: 50px;
+  gap: 10px;
+  flex-shrink: 0;
+  font-weight: 16px; /* Évite que les éléments se réduisent excessivement */
 }
 
 .top-bar a {
-    margin-left: 20px;
-    text-decoration: none;
-    color: #8C3A76;
-    margin-bottom: 50px;
-    font-size : 20px;
+  margin-left: 20px;
+  text-decoration: none;
+  color: #8C3A76;
+  font-size: 16px; /* Taille réduite pour petits écrans */
 }
 
-
-.log{
-  display: flex;
-  justify-content: flex-end;
-  background-color: #F2E4EE; 
-  padding: 10px 20px;
-  margin-right: 50px;
-}
-
-.log:hover{
+.log:hover {
   background-color: #8C3A76;
   color: #F2E4EE;
   padding: 5px 10px;
@@ -65,50 +116,50 @@ h1, h2, h3{
   font-weight: 400;
 }
 
-
-
 /* Barre de navigation principale */
 header {
-    background-color: #8C3A76; 
-    font-weight: 200;
-    padding: 17px 30px;
-    margin-bottom: 70px;
-    width: 100%;
-    
+  background-color: #8C3A76;
+  padding: 10px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Centrer tout le contenu du header */
+  width: 100%;
+  gap: 10px;
+  overflow-x: auto;
+  margin-bottom: 90px; /* Défilement horizontal activé si nécessaire */
 }
 
-
-
+/* Navbar */
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 15px 20px;
-    gap : 10px;
+  display: flex;
+  justify-content: space-between; /* Centrer les éléments à l'intérieur de la navbar */
+  align-items: center;
+  width: 100%; /* Prend toute la largeur disponible */
+  max-width: 1200px; /* Limite la largeur maximale */
+  gap: 20px; /* Espacement entre les éléments */
 }
 
 /* Menus de gauche et de droite */
 .nav-left, .nav-right {
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    gap : 15px,
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 15px;
 }
 
 .nav-left li, .nav-right li {
-    margin: 0 20px;
+  margin: 0 10px;
 }
 
 .nav-left a, .nav-right a {
-    text-decoration: none;
-    color: #F2E4EE;
-    font-size: 20px;
+  text-decoration: none;
+  color: #F2E4EE;
+  font-size: 20px; /* Taille de police 20px pour PC */
+  white-space: nowrap; /* Empêche les éléments de passer à la ligne */
 }
 
-
+/* Effet au survol */
 nav ul li a:hover {
   background-color: #F2E4EE;
   color: #8C3A76;
@@ -116,6 +167,32 @@ nav ul li a:hover {
   border-radius: 20px;
   font-weight: 400;
 }
+
+/* Responsive */
+@media (max-width: 768px) {
+  header {
+      padding: 5px 10px; /* Réduction des marges */
+      overflow-x: auto; /* Défilement horizontal activé si nécessaire */
+  }
+
+  .top-bar {
+      margin-right: 0;
+      padding: 5px 10px;
+  }
+
+  .navbar {
+      gap: 5px; /* Réduit encore les espaces pour petits écrans */
+  }
+
+  .nav-left a, .nav-right a {
+      font-size: 14px; /* Réduit la taille du texte sur petits écrans */
+  }
+
+  .nav-left li, .nav-right li {
+      margin: 0 5px; /* Espacement réduit */
+  }
+}
+
 
 /* Logo centré */
 .logo {
@@ -129,7 +206,7 @@ nav ul li a:hover {
 .logo img {
   height: auto; 
   width: 100%; 
-  max-width: 200px; 
+  max-width: 110px; 
 }
 
 /* Responsive */
@@ -148,7 +225,7 @@ nav ul li a:hover {
   }
 
   .logo img {
-      max-width: 150px; 
+      max-width: 90px; 
   }
 }
 
@@ -204,116 +281,165 @@ nav ul li a:hover {
   }
   
   
-  .welcome-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap; /* Pour s'adapter aux petits écrans */
-    gap: 20px;
-    max-width: 1200px;
-    margin: 0 auto;
-    margin-bottom: 150px;
-  }
-  
-  /* Image circulaire */
-  .welcome-image {
-    flex: 1;
-    max-width: 400px; /* Taille maximale de l'image */
-    text-align: center;
-  }
-  
-  .welcome-image img {
-    width: 100%;
-    border-radius: 50%; /* Rend l'image circulaire */
-    object-fit: cover;
-  }
-  
-  /* Texte */
-  .welcome-text {
-    flex: 2;
-    max-width: 600px;
-    text-align: left;
-    font-size: 18px;
-  }
-  
-  .welcome-text h2 {
-    font-size: 1.8rem;
-    font-weight: 400;
-    margin-bottom: 15px;
-  }
-  
-  .welcome-text {
+/* Container principal pour la section de bienvenue */
+.welcome-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap; /* Permet à la section de se réorganiser sur les petits écrans */
+  gap: 20px; /* Espace entre l'image et le texte */
+  max-width: 1200px; /* Limite la largeur sur grand écran */
+  margin: 0 auto;
+  margin-bottom: 150px; /* Marge sous la section */
+}
+
+/* Image circulaire */
+.welcome-image {
+  flex: 1;
+  max-width: 400px; /* Limite la taille maximale de l'image */
+  text-align: center;
+}
+
+/* Image à l'intérieur de .welcome-image */
+.welcome-image img {
+  width: 100%; /* L'image prend toute la largeur du conteneur */
+  height: 100%; /* L'image s'ajuste à la hauteur du conteneur */
+  border-radius: 50%; /* Rend l'image circulaire */
+  object-fit: cover; /* L'image s'adapte sans déformation */
+}
+
+/* Texte */
+.welcome-text {
   flex: 2;
   max-width: 600px;
-  text-align: left; /* Le texte reste aligné à gauche */
-  color: #8C3A76; /* Couleur violette */
+  text-align: left;
+  font-size: 1rem; /* Taille de police de base en rem (16px par défaut) */
+  line-height: 1.5; /* Augmente l'espacement entre les lignes pour améliorer la lisibilité */
+  color: #8C3A76; /* Couleur violette pour le texte */
   position: relative; /* Nécessaire pour le positionnement du lien */
 }
 
+/* Titre du texte */
+.welcome-text h2 {
+  font-size: 1.8rem; /* Taille du titre en rem (plus grand que le texte de base) */
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+
+/* Lien en bas à droite */
 .welcome-link {
-  font-size: 1rem;
+  font-size: 1rem; /* Taille du lien en rem */
   font-weight: 600;
   color: #8C3A76;
   text-decoration: none;
-  display: inline-block; 
+  display: inline-block;
   position: absolute;
   right: 0;
-  bottom: 0; 
+  bottom: 0;
 }
 
+/* Effet hover sur le lien */
 .welcome-link:hover {
   text-decoration: underline;
 }
 
- 
-.circle-container {
-    background-color: #F2E4EE;
-    padding: 40px;
-    border-radius: 10px;
-
-}
-
-
-
-.circle {
-    width: 130px;
-    height: 130px;
-    border-radius: 50%;
-    box-shadow: 0 0 0 20px #8C3A76;
-    background-color: white;
-    color: #8C3A76;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 35px;
-    margin: 0 auto;
-    margin-bottom: 35px;
-
-}
-
-
-
-
-.description {
-    color: #8C3A76;
-    margin-top: 15px;
-    font-size: 19px;
-    line-height: 1.5;
-    font-weight: 200;
-    
-}
-
+/* Responsive pour petits écrans */
 @media (max-width: 768px) {
-    .circle {
-        width: 100px;
-        height: 100px;
-        font-size: 20px;
-    }
+  .welcome-container {
+      flex-direction: column; /* Passe la disposition en colonne sur petits écrans */
+      gap: 15px; /* Espacement réduit sur petits écrans */
+      margin-bottom: 100px; /* Réduit la marge sous la section */
+  }
 
-    .description {
-        font-size: 14px;
-    }
+  .welcome-image {
+      max-width: 80%; /* L'image prend une largeur de 80% sur petits écrans */
+      margin-bottom: 20px; /* Ajoute un peu d'espace sous l'image */
+  }
+
+  .welcome-text {
+      max-width: 90%; /* Le texte occupe 90% de la largeur disponible */
+      font-size: 0.875rem; /* Réduit la taille de la police à 14px */
+      text-align: center; /* Aligne le texte au centre sur petits écrans */
+      position: static; /* Enlève la position absolue du lien pour éviter qu'il soit décalé */
+  }
+
+  .welcome-link {
+      position: static; /* Le lien sera à la fin du texte sur petits écrans */
+      margin-top: 10px; /* Marge pour espacer le lien du reste du texte */
+  }
 }
+
+/* Responsive pour très petits écrans (mobiles) */
+@media (max-width: 480px) {
+  .welcome-text {
+      font-size: 0.75rem; /* Réduit la taille de la police à 12px sur les très petits écrans */
+  }
+
+  .welcome-link {
+      font-size: 0.875rem; /* Réduit légèrement la taille du lien */
+  }
+}
+
+
+
+
+/* Conteneur principal */
+.container {
+}
+
+/* Cercle */
+.circle {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  background-color: white;
+  color: #8C3A76;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 35px;
+  font-weight: bold;
+  margin: 0 auto 20px;
+  text-align: center;
+}
+
+/* Texte descriptif */
+.description {
+  color: #8C3A76;
+  font-size: 18px;
+  line-height: 1.6;
+  font-weight: 300;
+  margin: 0 auto;
+  max-width: 300px; 
+  text-align: center;
+}
+
+/* Adaptation pour les écrans plus petits */
+@media (max-width: 768px) {
+  .circle {
+      width: 100px;
+      height: 100px;
+      font-size: 25px;
+  }
+
+  .description {
+      font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .circle {
+      width: 80px;
+      height: 80px;
+      font-size: 20px;
+  }
+
+  .description {
+      font-size: 14px;
+  }
+}
+
+
 
 .roses{
     margin-top: 100px;

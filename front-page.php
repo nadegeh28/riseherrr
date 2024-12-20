@@ -27,7 +27,6 @@
 
 
     <div class="container">
-    <div class="outer-circle">
         <div class="row">
             <div class="col-md-4 text-center">
                 <div class="circle">33%</div>
@@ -40,10 +39,10 @@
             <div class="col-md-4 text-center">
                 <div class="circle">25%</div>
                 <p class="description">Environ 25% des femmes ont subi à la fois des violences physiques et psychologiques.</p>
-            </div>
         </div>
     </div>
 </div>
+
 
 
 <section class="roses">

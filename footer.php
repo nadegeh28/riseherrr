@@ -1,8 +1,12 @@
 <footer class="footer">
   <div class="footer-container">
+    <!-- Logo -->
+    <div class="footer-logo">
+    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logoclair.png" alt="logo">
+    </div>
     <!-- Section Help -->
     <div class="footer-help">
-      <h2>Help</h2>
+      <p class="footer-titre">Help</p>
       <ul>
         <li><a href="https://riseher.emu.isfsc.be/mentions-legales/">Mentions Légales</a></li>
         <li><a href="https://riseher.emu.isfsc.be/conditions-generales/">Conditions générales</a></li>
@@ -11,7 +15,7 @@
     </div>
     <!-- Section Contact -->
     <div class="footer-contact">
-      <h2>Contact</h2>
+      <p class="footer-titre">Contact</p>
       <p>E-mail: <a href="mailto:contact@riseher.com">contact@riseher.com</a></p>
       <p>Téléphone: +32 2 312 54 76</p>
       <p>Adresse: 111 Rue de la Poste<br>1030 Bruxelles<br>Belgique</p>
@@ -30,3 +34,4 @@
     </div>
   </div>
 </footer>
+
