@@ -117,18 +117,15 @@ nav ul li a:hover {
   font-weight: 400;
 }
 
-/* Logo centré */
-.logo {
+
+.logo img {
+    height: 50px;  
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 0 15px;
-    max-width: 300px;
-}
-
-.logo img {
-    height: 50px;
+    max-width: 450px;
 }
 
 /* Responsive */
