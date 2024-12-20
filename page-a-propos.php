@@ -4,9 +4,9 @@
 
 <h1 class="noustitle">Qui sommes-nous ?</h1>
 
-<div class="container">
+<div class="nouss-container">
         <div class="nous-container">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/imgnous.jpg" alt="img">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/imgnous.jpg" alt="img" class="imgsite">
         </div>
         <div class="nous-text">
             <p>

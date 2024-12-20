@@ -373,6 +373,10 @@ nav ul li a:hover {
   text-align: center;
 }
 
+.circle-container{
+  margin-bottom: 150px;
+}
+
 /* Adaptation pour les écrans plus petits */
 @media (max-width: 768px) {
   .circle {
@@ -400,8 +404,16 @@ nav ul li a:hover {
 
 
 
+
+
 .roses{
     margin-top: 100px;
+}
+
+
+.rosenbr{
+  font-family: 'Dancing Script', sans-serif;
+  text-align: left;
 }
 
 .rosesname {
@@ -625,7 +637,7 @@ h1 .titlee{
 
 
 /* Styles pour la section "Qui sommes-nous" */
-.container {
+.nouss-container {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -671,16 +683,7 @@ text-align: center;
   margin-bottom: 15px;
 }
 
-@media screen and (max-width: 768px) {
-  .container {
-      flex-direction: column;
-      text-align: center;
-  }
 
-  .nous-container img {
-      width: 80%;
-  }
-}
 
 .content {
   max-width: 1200px;

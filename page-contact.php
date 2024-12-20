@@ -4,7 +4,7 @@
 
 <h1 class="noustitle">En cas d'urgences</h1>
 
-<div class="container">
+<div class="nouss-container">
     <div class="nous-container">
         <img src="<?php echo get_template_directory_uri(); ?>/assets/img/imgurgence.jpg" alt="img">
     </div>
