@@ -343,49 +343,6 @@ nav ul li a:hover {
   text-decoration: underline;
 }
 
-/* Responsive pour petits écrans */
-@media (max-width: 768px) {
-  .welcome-container {
-      flex-direction: column; /* Passe la disposition en colonne sur petits écrans */
-      gap: 15px; /* Espacement réduit sur petits écrans */
-      margin-bottom: 100px; /* Réduit la marge sous la section */
-  }
-
-  .welcome-image {
-      max-width: 80%; /* L'image prend une largeur de 80% sur petits écrans */
-      margin-bottom: 20px; /* Ajoute un peu d'espace sous l'image */
-  }
-
-  .welcome-text {
-      max-width: 90%; /* Le texte occupe 90% de la largeur disponible */
-      font-size: 0.875rem; /* Réduit la taille de la police à 14px */
-      text-align: center; /* Aligne le texte au centre sur petits écrans */
-      position: static; /* Enlève la position absolue du lien pour éviter qu'il soit décalé */
-  }
-
-  .welcome-link {
-      position: static; /* Le lien sera à la fin du texte sur petits écrans */
-      margin-top: 10px; /* Marge pour espacer le lien du reste du texte */
-  }
-}
-
-/* Responsive pour très petits écrans (mobiles) */
-@media (max-width: 480px) {
-  .welcome-text {
-      font-size: 0.75rem; /* Réduit la taille de la police à 12px sur les très petits écrans */
-  }
-
-  .welcome-link {
-      font-size: 0.875rem; /* Réduit légèrement la taille du lien */
-  }
-}
-
-
-
-
-/* Conteneur principal */
-.container {
-}
 
 /* Cercle */
 .circle {
@@ -460,20 +417,6 @@ nav ul li a:hover {
     margin-bottom: 20px;
 }
 
-.rosesnamess img { 
-    width: 120px;
-    margin-bottom: 15px;
-}
-
-.rosenbr {
-    margin-bottom: 15px; 
-}
-
-@media (max-width: 768px) {
-    .rosesnamess { 
-        max-width: 100%; 
-    }
-}
 
 .rosetext{
     font-size: 18px;
