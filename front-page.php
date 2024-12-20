@@ -47,28 +47,28 @@
 <section class="roses">
     <div class="rosesname">
         <div class="rosesnamess">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/chef2.png" alt="rosef">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icone.png" alt="rosef">
             <div>
                 <h3 class="rosenbr">Rose001</h3>
                 <p class="rosetext">« Le quiz m’a ouvert les yeux sur les violences psychologiques que je vivais et que j’ai normalisé. »</p>
             </div>
         </div>
         <div class="rosesnamess">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/forum2.png" alt="rose">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icone.png" alt="rosef">
             <div>
                 <h3 class="rosenbr">Rose999</h3>
                 <p class="rosetext">« Le forum m’a permis de partager mon histoire et de recevoir un soutien précieux. »</p>
             </div>
         </div>
         <div class="rosesnamess">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/quizzic.png" alt="rose" >
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icone.png" alt="rosef">
             <div>
                 <h3 class="rosenbr">Rose26</h3>
                 <p class="rosetext">« Les spécialistes de Rise Her, m’ont aidée à comprendre mes émotions et à défendre mes droits, offrant un soutien essentiel à mon rétablissement. »</p>
             </div>
         </div>
         <div class="rosesnamess">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/progricone.png" alt="roses">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icone.png" alt="rosef">
             <div>
                 <h3 class="rosenbr">Rose640</h3>
                 <p class="rosetext">« Les articles du blog m’ont éclairée sur les violences et m’ont fourni des conseils pratiques. »</p>

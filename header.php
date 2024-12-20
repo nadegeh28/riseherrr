@@ -41,7 +41,7 @@
             </div>
             
             <ul class="nav-right">
-                <li><a href="#">Forum</a></li>
+                <li><a href="https://riseher.emu.isfsc.be/forum/">Forum</a></li>
                 <li><a href="https://riseher.emu.isfsc.be/blog/">Blog</a></li>
                 <li><a href="https://riseher.emu.isfsc.be/formulaire/">Formulaire</a></li>
             </ul>
