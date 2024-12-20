@@ -11,7 +11,6 @@
     <div class="welcome-text">
       <h1>
          Bienvenue sur Rise Her : un espace où chaque Rose retrouve soutien, écoute et espoir.
-       
       </h1>
       <br>
       <p>
@@ -25,26 +24,23 @@
   </div>
 </section>
 
-
-    <div class="container">
-        <div class="row">
-            <div class="col-md-4 text-center">
-                <div class="circle">33%</div>
-                <p class="description">Environ 33% des femmes en Europe ont subi des violences physiques. Cela inclut les coups et les agressions de la part de partenaires ou de proches.</p>
-            </div>
-            <div class="col-md-4 text-center">
-                <div class="circle">60%</div>
-                <p class="description">Près de 60% des femmes ont été victimes de violences psychologiques, comme le contrôle et l’intimidation.</p>
-            </div>
-            <div class="col-md-4 text-center">
-                <div class="circle">25%</div>
-                <p class="description">Environ 25% des femmes ont subi à la fois des violences physiques et psychologiques.</p>
+    <div class="row">
+        <div class="col-md-4 text-center">
+            <div class="circle">33%</div>
+            <p class="description">Environ 33% des femmes en Europe ont subi des violences physiques. Cela inclut les coups et les agressions de la part de partenaires ou de proches.</p>
+        </div>
+        <div class="col-md-4 text-center">
+            <div class="circle">60%</div>
+            <p class="description">Près de 60% des femmes ont été victimes de violences psychologiques, comme le contrôle et l’intimidation.</p>
+        </div>
+        <div class="col-md-4 text-center">
+            <div class="circle">25%</div>
+            <p class="description">Environ 25% des femmes ont subi à la fois des violences physiques et psychologiques.</p>
         </div>
     </div>
-</div>
 
 
-
+<!-- Section roses -->
 <section class="roses">
     <div class="rosesname">
         <div class="rosesnamess">
@@ -81,9 +77,7 @@
 <h2 class="title">Nos Spécialités</h2>
 <p class="specialites">Nos spécialistes sont là pour vous écouter et vous accompagner avec bienveillance, en offrant un soutien adapté à chaque étape de votre parcours.</p>
 
-</div>
-
-
+<!-- Section team -->
 <div class="team-section">
   <div class="team-member">
   <img src="<?php echo get_template_directory_uri(); ?>/assets/img/avocate.jpg" alt="spec">
@@ -97,6 +91,6 @@
   </div>
 </div>
 
-
+</div>
 
 <?php get_footer(); ?>

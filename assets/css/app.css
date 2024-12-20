@@ -348,7 +348,8 @@ nav ul li a:hover {
 .circle {
   width: 130px;
   height: 130px;
-  border-radius: 50%;
+  border: 15px solid #8C3A76;  
+  border-radius: 50%; 
   background-color: white;
   color: #8C3A76;
   display: flex;
@@ -364,6 +365,7 @@ nav ul li a:hover {
 .description {
   color: #8C3A76;
   font-size: 18px;
+  font-weight: 200;
   line-height: 1.6;
   font-weight: 300;
   margin: 0 auto;
