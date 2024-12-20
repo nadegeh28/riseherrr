@@ -119,11 +119,12 @@ nav ul li a:hover {
 
 /* Logo centré */
 .logo {
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 0 15px;
-    width: 300px;
+    max-width: 300px;
 }
 
 .logo img {
@@ -741,6 +742,11 @@ h4{
 }
 
 
+.btn-inscription:hover {
+  background-color: #722f60;
+}
+
+
 .logo-inscr {
 margin-bottom: 40px;
 width: 180px;
@@ -784,6 +790,11 @@ width: 180px;
   border-radius: 30px; 
   font-size: 15px;
 }
+
+.login-button:hover {
+  background-color: #722f60;
+}
+
 
 
 
@@ -875,6 +886,10 @@ width: 180px;
   cursor: pointer;
   text-align: center; /* Centrer le texte */
   transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.update-button:hover {
+  background-color: #722f60;
 }
 
 
