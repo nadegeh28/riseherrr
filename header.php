@@ -45,7 +45,14 @@
                 <li><a href="https://riseher.emu.isfsc.be/formulaire/">Formulaire</a></li>
             </ul>
         </nav>
+
+
+
+
     </header>
+
+    <button id="exit-button">Sortir</button>
+
 
 </div>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
@@ -74,6 +81,17 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 </script>
+
+<script>
+
+    document.getElementById('exit-button').addEventListener('click', function() {
+        window.location.href = 'https://www.google.com/search?q=météo';
+    });
+</script>
+
+
+
+
 </body>
 </html>
 

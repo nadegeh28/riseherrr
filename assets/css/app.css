@@ -948,3 +948,24 @@ h6{
   margin-bottom: 80px;
   text-align: center;
 }
+
+
+#exit-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  background-color: #8C3A76; /* Rouge vif pour attirer l'attention */
+  color: #F2E4EE;
+  border: none;
+  border-radius: 5px;
+  padding: 15px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-transform: uppercase;
+}
+
+#exit-button:hover {
+  background-color: #722f60;
+}
