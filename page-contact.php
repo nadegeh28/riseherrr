@@ -30,11 +30,11 @@
 <section>
 
 
-<h4>En Belgique, voici les numéros d'urgence importants pour les femmes victimes de violences physiques :</h4>
+<h4 class="titrecon">En Belgique, voici les numéros d'urgence importants pour les femmes victimes de violences physiques :</h4>
 <br><br>
 <div class="emergency-info">
     <br><br>
-    <p>
+    <p class="contacttext">
         <strong class="contact" >112</strong> - Numéro d'urgence européen : Ce numéro est accessible 24h/24 et 7j/7 
         pour toute situation d'urgence, y compris les violences physiques. Il permet d’entrer 
         directement en contact avec les services de secours (police, pompiers, ambulances).
