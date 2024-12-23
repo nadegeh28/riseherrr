@@ -1512,7 +1512,7 @@ h6{
     background-color: #8C3A76;
     padding: 20px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    margin: 0 auto;
+    margin-left: auto;
 }
 
 textarea {
@@ -1548,7 +1548,11 @@ textarea::placeholder {
   border-radius: 50px;
   cursor: pointer;
   font-size: 16px;
-  float: right;
+  margin-top: 15px;
+  margin-bottom: 80px;
+  display: flex; /* Utilisation de Flexbox */
+  flex-direction: column; /* Permet d'empiler le contenu (textarea + bouton) */
+  align-items: flex-end;
 }
 
 .btn-forum:hover {

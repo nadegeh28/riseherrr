@@ -52,13 +52,14 @@
 
         <hr class="title-underline">
 
+        <br><br><br>
 
         <div class="forumtext">
         <textarea placeholder="Écrivez votre témoignage en toute anonymat..."></textarea>
     </div>
 
+    
         <button class="btn-forum">Envoyer</button>
-
 </section>
 
 
