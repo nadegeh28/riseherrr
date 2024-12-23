@@ -2,22 +2,23 @@
 
 <div class="marge">
 
-<section class="intro-section">
-  <div class="intro-content">
-    <h1 class="titlee">Êtes-vous victime de violence psychologique ?</h1>
-    <h1 class="titlee">Faites le test pour le découvrir</h1>
-    <br><br>
+<h1 class="noustitle">Êtes-vous victime de violence psychologique ? <br>
+                      Faites le test pour le découvrir</h1>
+
+<div class="nouss-container">
+    <div class="nous-container">
+    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/imgform.jpg" alt="img">
+    </div>
+    <div class="nous-text">
     <p>
       La violence psychologique peut être difficile à identifier, car elle se manifeste souvent de manière subtile et progressive.<br><br>
       Ce formulaire a pour but de vous aider à mieux comprendre certaines situations de votre vie et à repérer des comportements qui pourraient être nocifs pour votre bien-être émotionnel.<br><br>
       À travers une série de questions, vous pourrez évaluer si certaines personnes ou certaines relations vous mettent mal à l’aise ou vous affectent négativement.<br><br>
       Ce test peut être une première étape pour identifier ce que vous ressentez et vous orienter vers des ressources d’aide si besoin.
     </p>
-  </div>
-  <div class="intro-image">
-    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/imgform.jpg" alt="img">
-  </div>
-</section>
+    </div>
+</div>
+
 
 <form class="questionnaire-form" action="#" method="post">
     <div class="form-group">

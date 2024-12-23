@@ -2,26 +2,31 @@
 
 <div class="marge">
 
-<div class="author-profile">
-<img src="<?php echo get_template_directory_uri(); ?>/assets/img/icone.png" alt="rosef" class="rose">
-
+<div class="author-container">
+    <div class="author-profile d-flex align-items-center gap-3">
+        <div class="author-image">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icone.png" 
+                 alt="rosef" 
+                 class="rose">
+        </div>
         <div class="author-info">
-        <?php
-
-$author = get_queried_object();
-?>
+            <?php $author = get_queried_object(); ?>
             <h1 class="author-name"><?php echo esc_html($author->user_login); ?></h1>
             <p class="note">
-                Pour conserver votre anonymat, votre utilisateur sera sous le nom de <strong><?php echo esc_html($current_user->user_login); ?></strong>.
+                Pour conserver votre anonymat, votre utilisateur sera sous le nom de 
+                <strong><?php echo esc_html($current_user->user_login); ?></strong>.
             </p>
-            <p class="author-message">
-                « Tu mérites d’être aimée avec respect, douceur et dignité. 
-                Ne laisse jamais la violence définir ta valeur, car en toi réside 
-                une force immense et une lumière qui mérite tout ce qu’il y a de meilleur. »
-            </p>
-            
         </div>
     </div>
+</div>
+
+
+<p class="author-message">
+    « Tu mérites d’être aimée avec respect, douceur et dignité. 
+    Ne laisse jamais la violence définir ta valeur, car en toi réside 
+    une force immense et une lumière qui mérite tout ce qu’il y a de meilleur. »
+</p>
+
 
     <?php
 if (isset($_POST['update_feelings'])) {

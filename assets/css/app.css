@@ -652,59 +652,6 @@ p.specialites {
 }
 
 
-  
-
-  .intro-section {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-  }
-  
-  .intro-content {
-    max-width: 60%;
-  }
-  
-h1 .titlee{
-    margin-bottom: 100px;
-    text-align: center;
-    
-  }
-
-
-
-
-  
-  .intro-content p {
-    font-size: 1rem;
-    line-height: 1.6;
-  }
-  
-  .intro-image img {
-    width: 100%;
-    border-radius: 50%; 
-    object-fit: cover;
-    max-width: 400px;
-    
-  }
-  
-  @media (max-width: 768px) {
-    .intro-section {
-      flex-direction: column;
-      text-align: center;
-    }
-  
-    .intro-content {
-      max-width: 100%;
-      margin-bottom: 2rem;
-    }
-  
-    .intro-image img {
-      max-width: 80%;
-      margin: 0 auto;
-    }
-  }
-
 
 
   .questionnaire-form {
@@ -789,19 +736,10 @@ h1 .titlee{
 
 
 
-/* Responsiveness */
-@media (max-width: 768px) {
-    .questionnaire-form {
-        padding: 15px;
-    }
-
-    .btn-submit {
-        width: 100%;
-    }
-}
 
 
-/* Styles pour la section "Qui sommes-nous" */
+
+
 .nouss-container {
   display: flex;
   flex-direction: row;
@@ -847,6 +785,33 @@ text-align: center;
   line-height: 1.6;
   margin-bottom: 15px;
 }
+
+
+/* Adaptation pour les écrans plus petits */
+@media (max-width: 768px) {
+  .nous-container img {
+      width: 100px;
+      height: 100px;
+  }
+
+  .nous-text p {
+      font-size: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .nous-container img {
+      width: 100px; /* Augmentation de la taille de l'image */
+      height: 100px;
+  }
+
+  .nous-text p {
+      font-size: 14px;
+  }
+}
+
+
+
 
 
 
@@ -940,7 +905,7 @@ h4{
   width: 100%;
   max-width: 450px;
   margin: -190px auto 0 auto;
-  position: relative; /* Cela permet à l'élément enfant (le bouton) de se positionner par rapport à ce conteneur */
+  position: relative; 
 }
 
 .form-group {
