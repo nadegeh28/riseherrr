@@ -603,7 +603,7 @@ p.specialites {
 /* Description du membre */
 .team-member p {
   color: #F2E4EE;
-  font-size: 0.9rem;
+  font-size: 13px;
   line-height: 1.5;
 }
 
@@ -625,12 +625,18 @@ p.specialites {
   }
   .team-member {
       flex: 1 1 calc(50% - 1.5rem); /* 2 colonnes */
-      max-width: 200px; /* Réduction de la taille des cartes */
+      max-width: 150px; /* Réduction de la taille des cartes */
       padding: 1rem; /* Réduction du padding */
   }
   .team-member img {
       width: 90%; /* Réduction de la taille de l'image */
   }
+
+      .team-member p{
+font-size: 12px;
+      }
+  
+  
 }
 
 /* Écran ≤ 480px */
@@ -643,12 +649,16 @@ p.specialites {
   }
   .team-member {
       flex: 1 1 100%; /* Une seule colonne */
-      max-width: 90%; /* Carte prend presque toute la largeur */
+      max-width: 85%; /* Carte prend presque toute la largeur */
       padding: 0.8rem; /* Padding réduit */
   }
   .team-member img {
       width: 80%; /* Réduction supplémentaire de l'image */
   }
+
+  .team-member p{
+    font-size: 10px;
+          }
 }
 
 
@@ -932,7 +942,7 @@ font-weight:bold;
 
 
 
-h4 .titrecon {
+.titrecon {
   font-weight: bold;
 }
 
@@ -975,8 +985,7 @@ h4 .titrecon {
   .emergency-info p {
     bottom: 45px; 
   }
-
-  h4 .titrecon {
+.titrecon, .contact2 {
     font-size: 16px; /* Ajuste la taille du texte pour les écrans 768px */
   }
 
@@ -997,7 +1006,7 @@ h4 .titrecon {
     bottom: 35px; 
   }
 
-  h4 .titrecon {
+.titrecon, .contact2 {
     font-size: 14px; /* Ajuste la taille du texte pour les écrans 480px */
   }
 }
@@ -1072,32 +1081,65 @@ h4 .titrecon {
 }
 
 
-@media (max-width: 768px) {
-  .form-input {
-    font-size: 15px; /* Augmente la taille de la police sur les écrans 768px */
-  }
-
-  .btn-inscription {
-    font-size: 15px; /* Ajuste également la taille du bouton */
-  }
-}
-
-@media (max-width: 480px) {
-  .form-input {
-    font-size: 12px; /* Réduit la taille de la police sur les écrans 480px */
-  }
-
-  .btn-inscription {
-    font-size: 12px; /* Réduit également la taille du bouton */
-  }
-}
 
 
 
 .logo-inscr {
-margin-bottom: 40px;
-width: 180px;
+  margin-bottom: 40px;
+  width: 180px;
+  display: block;
+  margin-left: auto; 
+  margin-right: auto;
 }
+
+
+@media (max-width: 768px) {
+  .container-form {
+    padding: 15px; 
+  }
+
+  .form-input {
+    font-size: 13px; 
+    padding: 10px 20px; 
+  }
+
+  .btn-inscription {
+    font-size: 14px;
+    padding: 8px 18px; 
+    bottom: -50px; 
+  }
+
+  .logo-inscr {
+    width: 150px; 
+    margin-bottom: 30px; 
+  }
+}
+
+@media (max-width: 480px) {
+  .container-form {
+    padding: 10px; 
+  }
+
+  .form-input {
+    font-size: 12px; 
+    padding: 8px 15px; 
+  }
+
+  .btn-inscription {
+    font-size: 13px; 
+    padding: 8px 15px; 
+    bottom: -40px; 
+  }
+
+  .logo-inscr {
+    width: 120px; 
+    margin-bottom: 20px; 
+  }
+}
+
+
+
+
 
 
 .login-form {
@@ -1142,9 +1184,6 @@ width: 180px;
   background-color: #722f60;
 }
 
-
-
-
 .logo-con {
   margin-bottom: 40px;
   width: 180px;
@@ -1152,6 +1191,54 @@ width: 180px;
   margin-left: auto; 
   margin-right: auto; 
 }
+
+@media (max-width: 768px) {
+  .login-form {
+    padding: 15px; /* Réduit le padding pour les écrans plus petits */
+  }
+
+  .email, .password {
+    font-size: 14px; /* Réduit la taille du texte des champs input */
+    padding: 8px 18px; /* Réduit encore les padding des champs input */
+  }
+
+  .login-button {
+    font-size: 14px; /* Réduit la taille du bouton */
+    padding: 8px 18px; /* Ajuste le padding du bouton */
+    bottom: -50px; /* Ajuste la position du bouton */
+  }
+
+  .logo-con {
+    width: 150px; /* Réduit la taille du logo */
+    margin-bottom: 30px; /* Ajuste l'espacement sous le logo */
+  }
+}
+
+@media (max-width: 480px) {
+  .login-form {
+    padding: 10px; /* Réduit encore le padding pour les écrans 480px */
+  }
+
+  .email, .password {
+    font-size: 13px; /* Réduit encore la taille du texte des champs input */
+    padding: 6px 15px; /* Réduit davantage les padding des champs input */
+  }
+
+  .login-button {
+    font-size: 13px; /* Réduit encore la taille du bouton */
+    padding: 8px 15px; /* Réduit le padding du bouton */
+    bottom: -40px; /* Ajuste la position du bouton */
+  }
+
+  .logo-con {
+    width: 120px; /* Réduit encore la taille du logo */
+    margin-bottom: 20px; /* Réduit l'espacement sous le logo */
+  }
+}
+
+
+
+
 
 .note{
   font-size: 10px;
@@ -1244,7 +1331,6 @@ width: 180px;
 
 
 
-
 .title-underline {
   border: none;
   border-top: 1px solid #8C3A76; /* Couleur originale */
@@ -1252,7 +1338,6 @@ width: 180px;
   background: none; 
   opacity: 1; 
 }
-
 
 .mentions-legales-container {
   color: #8C3A76;
@@ -1266,7 +1351,6 @@ width: 180px;
   text-align: center;
 }
 
-
 .mentions-legales-container p {
   font-size: 18px;
   line-height: 1.5;
@@ -1276,6 +1360,40 @@ width: 180px;
   color: #8C3A76; 
   text-decoration: none;
 }
+
+/* Adaptation pour les écrans plus petits */
+@media (max-width: 768px) {
+  .mentions-legales-container {
+    font-size: 17px; /* Réduit la taille de la police pour les écrans 768px */
+  }
+
+  .mentions-legales-container h1 {
+    font-size: 35px; /* Réduit la taille du titre h1 pour les écrans 768px */
+    margin-bottom: 60px; /* Réduit l'espacement sous le titre */
+  }
+
+  .mentions-legales-container p {
+    font-size: 14px; /* Réduit la taille de la police pour les paragraphes */
+  }
+}
+
+@media (max-width: 480px) {
+  .mentions-legales-container {
+    font-size: 14px; /* Réduit la taille de la police pour les écrans 480px */
+  }
+
+  .mentions-legales-container h1 {
+    font-size: 28px; /* Réduit la taille du titre h1 pour les écrans 480px */
+    margin-bottom: 40px; /* Réduit encore l'espacement sous le titre */
+  }
+
+  .mentions-legales-container p {
+    font-size: 12px; /* Réduit encore la taille des paragraphes pour les écrans 480px */
+  }
+
+
+}
+
 
 h6{
   font-weight: 700;
@@ -1303,6 +1421,39 @@ h6{
   margin-bottom: 20px;
 }
 
+@media (max-width: 768px) {
+  h6 {
+    font-size: 17px; /* Réduit la taille de la police pour les écrans 768px */
+  }
+
+  .conditions-generales-container {
+    font-size: 35px; /* Réduit la taille du texte du titre pour les écrans 768px */
+    margin-bottom: 60px; /* Réduit l'espacement sous le titre */
+  }
+
+  .paragcond {
+    font-size: 14px; /* Ajuste la taille du texte dans les paragraphes */
+  }
+}
+
+@media (max-width: 480px) {
+  h6 {
+    font-size: 14px; /* Réduit encore la taille de la police pour les écrans 480px */
+  }
+
+  .conditions-generales-container {
+    font-size: 28px; /* Réduit la taille du texte du titre pour les écrans 480px */
+    margin-bottom: 40px; /* Réduit encore l'espacement sous le titre */
+  }
+
+  .paragcond {
+    font-size: 12px; /* Réduit la taille du texte dans les paragraphes pour les petits écrans */
+  }
+}
+
+
+
+
 
 .blog-container{
   color: #8C3A76;
@@ -1319,8 +1470,8 @@ h6{
   z-index: 1000;
   background-color: #8C3A76; /* Rouge vif pour attirer l'attention */
   color: #F2E4EE;
-  border: none;
-  border-radius: 5px;
+  border: 2px solid #F2E4EE;
+  border-radius: 50px;
   padding: 15px 20px;
   font-size: 16px;
   cursor: pointer;
@@ -1330,4 +1481,78 @@ h6{
 
 #exit-button:hover {
   background-color: #722f60;
+  border: 2px solid #F2E4EE;
+  border-radius: 50px;
 }
+
+
+
+.testimony-container {
+  background-color: #8C3A76;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 800px;
+  border-radius: 40px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  color: white;
+}
+
+.testimony-container p {
+  margin: 10px;
+}
+
+
+
+
+
+.forumtext{
+  width: 80%;
+    max-width: 800px;
+    border-radius: 20px;
+    background-color: #8C3A76;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+}
+
+textarea {
+  width: 100%;
+  height: 300px;
+  border: none;
+  border-radius: 30px;
+  padding: 15px;
+  background-color: #8C3A76;
+  color: #F2E4EE; 
+  font-size: 14px;
+  resize: none;
+  outline: none;
+  font-weight: bolder;
+}
+  
+
+
+textarea::placeholder {
+  color: #F2E4EE;
+  font-size: 14px;
+  font-weight: lighter;
+}
+
+
+
+
+.btn-forum {
+  background-color: #8C3A76;
+  color: #F2E4EE;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 16px;
+  float: right;
+}
+
+.btn-forum:hover {
+  background-color: #722f60;
+}
+
+

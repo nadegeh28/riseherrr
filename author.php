@@ -5,9 +5,7 @@
 <div class="author-container">
     <div class="author-profile d-flex align-items-center gap-3">
         <div class="author-image">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icone.png" 
-                 alt="rosef" 
-                 class="rose">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icone.png" alt="rosef" class="rose">
         </div>
         <div class="author-info">
             <?php $author = get_queried_object(); ?>
