@@ -1,8 +1,8 @@
 <footer class="footer">
   <div class="footer-container">
     <!-- Logo -->
-    <div class="footer-logo">
-    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logoclair.png" alt="logo" width="200px">
+    <div class="logo">
+    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logoclair.png" alt="logo">
     </div>
     <!-- Section Help -->
     <div class="footer-help">

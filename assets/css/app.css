@@ -231,54 +231,124 @@ nav ul li a:hover {
 
 
 /* Footer global styles */
+/* FOOTER GENERAL */
 .footer {
-    background-color: #8C3A76; /* Couleur violette */
-    color: #F2E4EE;
-    padding: 20px 40px;
+  background-color: #8C3A76; /* Couleur violette */
+  color: #F2E4EE;
+  padding: 20px 40px;
+}
+
+/* CONTENEUR FLEXIBLE */
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 20px; /* Espacement entre les colonnes */
+}
+
+/* TITRES DU FOOTER */
+.footer h4 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+/* LIENS D'AIDE */
+.footer-help ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-help ul li {
+  margin-bottom: 5px;
+}
+
+.footer-help ul li a,
+.footer-contact a {
+  color: #F2E4EE;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+.footer-help ul li a:hover,
+.footer-contact a:hover {
+  color: #ffffff; /* Légère variation au survol */
+}
+
+/* CONTACT */
+.footer-contact p {
+  margin: 5px 0;
+  font-size: 0.9rem;
+}
+
+/* RÉSEAUX SOCIAUX */
+.footer-social {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.footer-social a img {
+  width: 24px;
+  height: 24px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.footer-social a img:hover {
+  transform: scale(1.1);
+}
+
+/* RESPONSIVE DESIGN */
+
+/* Écran ≤ 768px */
+@media (max-width: 768px) {
+  .footer {
+      padding: 20px; /* Réduction du padding global */
   }
-  
   .footer-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    gap: 10px; /* Réduit l'espacement entre les colonnes */
+      gap: 15px; /* Réduction de l'espacement entre les colonnes */
   }
-  
   .footer h4 {
-    font-size: 1.2rem;
-    margin-bottom: 10px;
+      font-size: 1rem; /* Réduction de la taille des titres */
   }
-  
-  .footer-help ul {
-    list-style: none;
-    padding: 0;
-  }
-  
   .footer-help ul li {
-    margin-bottom: 5px;
+      margin-bottom: 3px; /* Réduction de l'espacement entre les éléments de la liste */
   }
-  
-  .footer-help ul li a,
-  .footer-contact a {
-    color: #F2E4EE;
-    text-decoration: none;
-  }
-  
   .footer-contact p {
-    margin: 5px 0;
+      font-size: 0.85rem; /* Texte légèrement plus petit */
   }
-  
-  .footer-social {
-    display: flex;
-    gap: 15px;
-    align-items: center;
-  }
-  
   .footer-social a img {
-    width: 24px;
-    height: 24px;
+      width: 20px; /* Réduction des icônes */
+      height: 20px;
   }
+}
+
+/* Écran ≤ 480px */
+@media (max-width: 480px) {
+  .footer {
+      padding: 15px; /* Padding réduit pour s'adapter aux petits écrans */
+  }
+  .footer-container {
+      flex-direction: column; /* Les colonnes deviennent des lignes */
+      align-items: center; /* Centrage des éléments */
+      text-align: center; /* Alignement central du texte */
+      gap: 10px; /* Espacement réduit */
+  }
+  .footer h4 {
+      font-size: 0.9rem; /* Titres plus petits */
+  }
+  .footer-help ul li {
+      font-size: 0.85rem; /* Texte plus petit */
+  }
+  .footer-contact p {
+      font-size: 0.8rem; /* Texte plus petit */
+  }
+  .footer-social a img {
+      width: 18px; /* Icônes plus petites */
+      height: 18px;
+  }
+}
+
   
   
 /* Container principal pour la section de bienvenue */
@@ -386,7 +456,7 @@ nav ul li a:hover {
   }
 
   .description {
-      font-size: 16px;
+      font-size: 15px;
   }
 }
 
@@ -445,12 +515,9 @@ nav ul li a:hover {
   width: 100px; /* Taille par défaut */
   height: auto;
   border-radius: 8px;
-  transition: transform 0.3s ease-in-out;
 }
 
-.rose:hover {
-  transform: scale(1.1); /* Agrandissement au survol */
-}
+
 
 /* Responsive Design */
 
@@ -481,54 +548,108 @@ nav ul li a:hover {
 }
 
 
+/* Texte des spécialités */
 p.specialites {
-    text-align: center; 
-    margin: 0 auto;     
-    padding: 0; 
-    font-size: 20px;
-    margin-top: 20px;  
-
-
+  text-align: center; 
+  margin: 0 auto;     
+  padding: 0; 
+  font-size: 20px;
+  margin-top: 20px;  
 }
 
+/* Section de l'équipe */
 .team-section {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-    padding: 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+  flex-wrap: wrap; /* Permet le retour à la ligne sur petits écrans */
+}
+
+/* Carte de membre de l'équipe */
+.team-member {
+  text-align: center;
+  background-color: #8C3A76;
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 250px;
+  flex: 1 1 calc(33.33% - 2rem); /* Répartition sur 3 colonnes */
+  transition: transform 0.3s ease-in-out;
+}
+
+.team-member:hover {
+  transform: scale(1.05);
+}
+
+/* Image du membre */
+.team-member img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.team-member img:hover {
+  transform: scale(1.05);
+}
+
+/* Nom du membre */
+.team-member h3 {
+  color: #F2E4EE;
+  margin: 0.5rem 0;
+}
+
+/* Description du membre */
+.team-member p {
+  color: #F2E4EE;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+/* Texte en gras */
+.team-member strong {
+  color: #F2E4EE;
+  font-weight: bold;
+}
+
+/* RESPONSIVE DESIGN */
+
+/* Écran ≤ 768px */
+@media (max-width: 768px) {
+  p.specialites {
+      font-size: 15px; /* Taille réduite du texte */
   }
-  
+  .team-section {
+      gap: 1.5rem; /* Espacement réduit */
+  }
   .team-member {
-    text-align: center;
-    background-color: #8C3A76;
-    border-radius: 10px;
-    padding: 1.5rem;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    max-width: 250px;
+      flex: 1 1 calc(50% - 1.5rem); /* 2 colonnes */
+      max-width: 200px; /* Réduction de la taille des cartes */
+      padding: 1rem; /* Réduction du padding */
   }
-  
   .team-member img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
+      width: 90%; /* Réduction de la taille de l'image */
   }
-  
-  .team-member h3 {
-    color: #F2E4EE;
-    margin: 0.5rem 0;
+}
+
+/* Écran ≤ 480px */
+@media (max-width: 480px) {
+  p.specialites {
+      font-size: 14px; /* Taille minimale du texte */
   }
-  
-  .team-member p {
-color: #F2E4EE;
-    font-size: 0.9rem;
-    line-height: 1.5;
+  .team-section {
+      gap: 1rem; /* Espacement encore réduit */
   }
-  
-  .team-member strong {
-    color: #F2E4EE;
-    font-weight: bold;
+  .team-member {
+      flex: 1 1 100%; /* Une seule colonne */
+      max-width: 90%; /* Carte prend presque toute la largeur */
+      padding: 0.8rem; /* Padding réduit */
   }
-  
+  .team-member img {
+      width: 80%; /* Réduction supplémentaire de l'image */
+  }
+}
 
 
   
