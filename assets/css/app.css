@@ -406,36 +406,80 @@ nav ul li a:hover {
 
 
 
-.roses{
-    margin-top: 100px;
+/* Marges générales pour la section */
+.roses {
+  margin-top: 100px;
 }
 
-
-.rosenbr{
+/* Style du texte avec une police spécifique */
+.rosenbr {
   font-family: 'Dancing Script', sans-serif;
   text-align: left;
 }
 
+/* Conteneur principal avec gestion de l'affichage flexible */
 .rosesname {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    text-align: left;
-
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  text-align: left;
+  gap: 20px; /* Espacement entre les éléments */
 }
 
+/* Sous-conteneur pour chaque élément */
 .rosesnamess { 
-    display: flex; 
-    align-items: center; 
-    max-width: 40%; 
-    margin-bottom: 20px;
+  display: flex; 
+  align-items: center; 
+  max-width: 40%; 
+  margin-bottom: 20px;
 }
 
-
-.rosetext{
-    font-size: 18px;
-    font-weight: 200;
+/* Texte des roses */
+.rosetext {
+  font-size: 18px;
+  font-weight: 200;
 }
+
+/* Image avec des styles spécifiques */
+.rose {
+  width: 100px; /* Taille par défaut */
+  height: auto;
+  border-radius: 8px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.rose:hover {
+  transform: scale(1.1); /* Agrandissement au survol */
+}
+
+/* Responsive Design */
+
+/* Écran ≤ 768px */
+@media (max-width: 768px) {
+  .rosesnamess {
+      max-width: 80%; /* Les éléments prennent plus d'espace */
+  }
+  .rosetext {
+      font-size: 15px; /* Réduction de la taille du texte */
+  }
+  .rose {
+      width: 80px; /* Réduction de la taille de l'image */
+  }
+}
+
+/* Écran ≤ 480px */
+@media (max-width: 480px) {
+  .rosesnamess {
+      max-width: 100%; /* Les éléments s'étendent sur toute la largeur */
+  }
+  .rosetext {
+      font-size: 14px; /* Réduction supplémentaire du texte */
+  }
+  .rose {
+      width: 60px; /* Taille minimale de l'image */
+  }
+}
+
 
 p.specialites {
     text-align: center; 
