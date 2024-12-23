@@ -3,7 +3,7 @@
 <div class="marge">
 
 <div class="author-profile">
-<img src="<?php echo get_template_directory_uri(); ?>/assets/img/logowelleness.png" alt="Riseher" class="authorimg">
+<img src="<?php echo get_template_directory_uri(); ?>/assets/img/icone.png" alt="rosef" class="rose">
 
         <div class="author-info">
         <?php
