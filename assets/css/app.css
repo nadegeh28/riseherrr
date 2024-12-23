@@ -1502,7 +1502,11 @@ h6{
 }
 
 
-
+.roseforum{
+  max-width: 80px;
+  border-radius: 50px;
+  border: 1px solid #8C3A76;
+}
 
 
 .forumtext{
@@ -1513,6 +1517,7 @@ h6{
     padding: 20px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     margin-left: auto;
+    margin-right: auto;
 }
 
 textarea {

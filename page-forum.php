@@ -22,6 +22,11 @@
 
 
 <section>
+
+<br><br><br>
+
+
+<hr class="title-underline">
         <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icone.png" alt="rosef" class="roseforum">
         <p class="rosenbr">Rose002</p>
         <div class="testimony-container">
@@ -29,10 +34,10 @@
             
             
 
-            <hr class="title-underline">
 
         </div>
-        <hr class="custom-line">
+
+        <hr class="title-underline">
         <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icone.png" alt="rosef" class="roseforum">
         <p class="rosenbr">Rose042</p>
         <div class="testimony-container">
@@ -43,7 +48,6 @@
         <hr class="title-underline">
 
 
-        <hr class="custom-line">
         <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icone.png" alt="rosef" class="roseforum">
         <p class="rosenbr">Rose270</p>
         <div class="testimony-container">
