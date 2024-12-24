@@ -63,7 +63,7 @@
         <div class="rosesnamess">
         <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icone.png" alt="rosef" class="rose">
             <div>
-                <h3 class="rosenbr">Rose26</h3>
+                <h3 class="rosenbr">Rose026</h3>
                 <p class="rosetext">« Les spécialistes de Rise Her, m’ont aidée à comprendre mes émotions et à défendre mes droits, offrant un soutien essentiel à mon rétablissement. »</p>
             </div>
         </div>
