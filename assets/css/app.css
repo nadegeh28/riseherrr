@@ -532,18 +532,26 @@ nav ul li a:hover {
   .rose {
       width: 80px; /* Réduction de la taille de l'image */
   }
+
+  .rosenbr{
+    font-size: 17px;
+  }
 }
 
 /* Écran ≤ 480px */
 @media (max-width: 480px) {
   .rosesnamess {
-      max-width: 100%; /* Les éléments s'étendent sur toute la largeur */
+      max-width: 100%; 
   }
   .rosetext {
-      font-size: 12px; /* Réduction supplémentaire du texte */
+      font-size: 12px; 
   }
   .rose {
-      width: 60px; /* Taille minimale de l'image */
+      width: 60px;
+  }
+
+  .rosenbr{
+    font-size: 14px;
   }
 }
 
