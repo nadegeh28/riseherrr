@@ -1561,11 +1561,9 @@ textarea::placeholder {
   border-radius: 50px;
   cursor: pointer;
   font-size: 16px;
-  margin-top: 15px;
+  margin-top: 30px;
   margin-bottom: 80px;
-  display: flex; /* Utilisation de Flexbox */
-  flex-direction: column; /* Permet d'empiler le contenu (textarea + bouton) */
-  align-items: flex-end;
+margin-left: 900px;
 }
 
 .btn-forum:hover {
