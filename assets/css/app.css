@@ -1587,7 +1587,7 @@ textarea::placeholder {
     font-size: 14px; 
   }
 
-  .forumtext{
+  .forum-message, .forum-intro{
     font-size: 14px;
   }
 }
@@ -1610,7 +1610,7 @@ textarea::placeholder {
   }
 
 
-  .forumtext{
+  .forum-message, .forum-intro{
     font-size: 12px;
   }
 }

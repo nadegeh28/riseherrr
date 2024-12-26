@@ -6,9 +6,9 @@
     <div class="forum-text">
         <h6 class="titrecon">Bienvenue dans la communauté spécialement créée pour vous, 
         <br>chères Roses : un espace de partage et de soutien bienveillant.</h6>
-        <p>Nous sommes ravis de vous accueillir sur le forum de Rise Her, un lieu dédié aux femmes ayant traversé des épreuves de violences physiques et psychologiques. Ici, vous trouverez un espace sécurisé où vous pourrez :
+        <p class="forum-intro">Nous sommes ravis de vous accueillir sur le forum de Rise Her, un lieu dédié aux femmes ayant traversé des épreuves de violences physiques et psychologiques. Ici, vous trouverez un espace sécurisé où vous pourrez :
         </p>
-        <p>Lire des témoignages inspirants et réconfortants de celles qui, comme vous, ont choisi de se relever.
+        <p class="forum-intro">Lire des témoignages inspirants et réconfortants de celles qui, comme vous, ont choisi de se relever.
             <br>
             Partager votre propre histoire, si vous le souhaitez, et contribuer à donner de la force à d'autres.
             <br>
@@ -16,7 +16,7 @@
             <br>
             La communauté Rose a été créée pour que personne ne se sente seule face à l’épreuve. Nous croyons en la puissance des mots pour soigner, libérer et inspirer. Ensemble, nous avançons pas à pas, dans un environnement d’entraide et de compréhension mutuelle.
         </p>
-        <p>Ici, la bienveillance est notre règle d’or . Vous serez toujours écoutée, jamais jugée. Prenez le temps de lire, d’écrire ou simplement de vous sentir entourée par des femmes courageuses et inspirantes.
+        <p class="forum-intro">Ici, la bienveillance est notre règle d’or . Vous serez toujours écoutée, jamais jugée. Prenez le temps de lire, d’écrire ou simplement de vous sentir entourée par des femmes courageuses et inspirantes.
         </p>
     </div>
     <br><br><br>
@@ -27,7 +27,7 @@
         <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icone.png" alt="rosef" class="roseforum">
         <p class="rosenbr">rose002</p>
         <div class="testimony-container">
-            <p>Après trois ans dans une relation toxique, je me sentais complètement brisée. 
+            <p class="forum-message">Après trois ans dans une relation toxique, je me sentais complètement brisée. 
                 Les forums de *Les Roses* ont été mon refuge. J’ai pu partager mes doutes et mes peurs sans jugement. 
                 Une membre m’a conseillé de prendre contact avec une psychologue via le site, ce que j’ai fait. 
                 Grâce à ce soutien, j’ai trouvé la force de quitter mon compagnon et de commencer une nouvelle vie. 
@@ -39,7 +39,7 @@
         <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icone.png" alt="rosef" class="roseforum">
         <p class="rosenbr">rose042</p>
         <div class="testimony-container">
-            <p>Je suis une retraitée qui, après des décennies de violences verbales et psychologiques, 
+            <p class="forum-message">Je suis une retraitée qui, après des décennies de violences verbales et psychologiques, 
                 ne savait plus quoi faire ni à qui en parler. Grâce au quizz de RiseHer, 
                 j’ai enfin compris que je n’étais pas folle : ce que je vivais était bien de la violence. 
                 J’ai osé poser des mots sur mes expériences et trouvé des ressources pour affronter cette situation. 
@@ -50,7 +50,7 @@
         <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icone.png" alt="rosef" class="roseforum">
         <p class="rosenbr">rose270</p>
         <div class="testimony-container">
-            <p>Je me sentais isolée et honteuse après avoir subi des pressions dans une relation. 
+            <p class="forum-message">Je me sentais isolée et honteuse après avoir subi des pressions dans une relation. 
                 RiseHer m’a ouvert les yeux. Le quiz m’a aidée à reconnaître des schémas de manipulation. 
                 Ensuite, partager mon histoire anonymement sur le forum m’a permis de recevoir des conseils bienveillants. 
                 Les témoignages d’autres Roses m’ont inspirée à mettre des limites et à me recentrer sur moi-même. Aujourd’hui, 
@@ -71,7 +71,7 @@
             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icone.png" alt="rosef" class="roseforum">
             <p class="rosenbr"><?php echo esc_html($comment->comment_author); ?></p>
             <div class="testimony-container">
-                <p><?php echo esc_html($comment->comment_content); ?></p>
+                <p class="forum-message"><?php echo esc_html($comment->comment_content); ?></p>
             </div>
         <?php endforeach; ?>
 
