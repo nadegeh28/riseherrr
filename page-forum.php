@@ -2,6 +2,7 @@
 
 <div class="marge">
     <h1 class="noustitle">Forum</h1>
+    <br><br>
     <div class="forum-text">
         <h6 class="titrecon">Bienvenue dans la communauté spécialement créée pour vous, 
         <br>chères Roses : un espace de partage et de soutien bienveillant.</h6>
@@ -53,7 +54,7 @@
                 RiseHer m’a ouvert les yeux. Le quiz m’a aidée à reconnaître des schémas de manipulation. 
                 Ensuite, partager mon histoire anonymement sur le forum m’a permis de recevoir des conseils bienveillants. 
                 Les témoignages d’autres Roses m’ont inspirée à mettre des limites et à me recentrer sur moi-même. Aujourd’hui, 
-                je me sens plus forte et moins seule. </p>
+                je me sens plus forte et moins seule.</p>
         </div>
 
 
@@ -89,9 +90,7 @@
                <div class="forumtext">
         <form method="post" action="">
             <textarea name="user_testimony" placeholder="Écrivez votre témoignage en toute anonymat..."></textarea>
-            <div class="btn-forumm">
             <button type="submit" name="submit_testimony" class="btn-forum">Envoyer</button>
-            </div>
         </form>
     </div>
                 

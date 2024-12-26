@@ -1431,31 +1431,31 @@ h6{
 
 @media (max-width: 768px) {
   h6 {
-    font-size: 17px; /* Réduit la taille de la police pour les écrans 768px */
+    font-size: 17px; 
   }
 
   .conditions-generales-container {
-    font-size: 35px; /* Réduit la taille du texte du titre pour les écrans 768px */
-    margin-bottom: 60px; /* Réduit l'espacement sous le titre */
+    font-size: 35px; 
+    margin-bottom: 60px; 
   }
 
   .paragcond {
-    font-size: 14px; /* Ajuste la taille du texte dans les paragraphes */
+    font-size: 14px; 
   }
 }
 
 @media (max-width: 480px) {
   h6 {
-    font-size: 14px; /* Réduit encore la taille de la police pour les écrans 480px */
+    font-size: 14px; 
   }
 
   .conditions-generales-container {
-    font-size: 28px; /* Réduit la taille du texte du titre pour les écrans 480px */
-    margin-bottom: 40px; /* Réduit encore l'espacement sous le titre */
+    font-size: 28px;
+    margin-bottom: 40px; 
   }
 
   .paragcond {
-    font-size: 12px; /* Réduit la taille du texte dans les paragraphes pour les petits écrans */
+    font-size: 12px; 
   }
 }
 
@@ -1476,7 +1476,7 @@ h6{
   bottom: 20px;
   right: 20px;
   z-index: 1000;
-  background-color: #8C3A76; /* Rouge vif pour attirer l'attention */
+  background-color: #8C3A76; 
   color: #F2E4EE;
   border: 2px solid #F2E4EE;
   border-radius: 50px;
@@ -1554,20 +1554,63 @@ textarea::placeholder {
 
 
 .btn-forum {
-  background-color: #8C3A76;
-  color: #F2E4EE;
+  background-color: #F2E4EE;
+  color: #8C3A76;
   border: none;
   padding: 10px 20px;
   border-radius: 50px;
   cursor: pointer;
   font-size: 16px;
   margin-top: 30px;
-  margin-bottom: 80px;
-margin-left: 900px;
+  margin-left: 600px ;
 }
 
 .btn-forum:hover {
   background-color: #722f60;
+  color: #F2E4EE;
 }
 
+@media (max-width: 768px) {
+  .testimony-container, .forumtext {
+    width: 90%; 
+    padding: 15px; 
+  }
 
+  textarea {
+    height: 250px; 
+  }
+
+  .btn-forum {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    font-size: 14px; 
+  }
+
+  .forumtext{
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .testimony-container, .forumtext {
+    width: 95%; 
+    padding: 10px; 
+  }
+
+  textarea {
+    height: 200px; 
+  }
+
+  .btn-forum {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    font-size: 12px; 
+  }
+
+
+  .forumtext{
+    font-size: 12px;
+  }
+}
