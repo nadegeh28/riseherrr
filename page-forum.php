@@ -24,7 +24,7 @@
         <!-- Témoignages statiques -->
         <hr class="title-underline">
         <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icone.png" alt="rosef" class="roseforum">
-        <p class="rosenbr">Rose002</p>
+        <p class="rosenbr">rose002</p>
         <div class="testimony-container">
             <p>Après trois ans dans une relation toxique, je me sentais complètement brisée. 
                 Les forums de *Les Roses* ont été mon refuge. J’ai pu partager mes doutes et mes peurs sans jugement. 
@@ -36,7 +36,7 @@
 
         <hr class="title-underline">
         <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icone.png" alt="rosef" class="roseforum">
-        <p class="rosenbr">Rose042</p>
+        <p class="rosenbr">rose042</p>
         <div class="testimony-container">
             <p>Je suis une retraitée qui, après des décennies de violences verbales et psychologiques, 
                 ne savait plus quoi faire ni à qui en parler. Grâce au quizz de RiseHer, 
@@ -47,7 +47,7 @@
 
         <hr class="title-underline">
         <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icone.png" alt="rosef" class="roseforum">
-        <p class="rosenbr">Rose270</p>
+        <p class="rosenbr">rose270</p>
         <div class="testimony-container">
             <p>Je me sentais isolée et honteuse après avoir subi des pressions dans une relation. 
                 RiseHer m’a ouvert les yeux. Le quiz m’a aidée à reconnaître des schémas de manipulation. 
@@ -86,13 +86,15 @@
             ]);
 
             if ($user_comment_count < 5) : ?>
-                <div class="forumtext">
-
-                    <form method="post" action="">
-                        <textarea name="user_testimony" placeholder="Écrivez votre témoignage en toute anonymat..."></textarea>
-                        </form>   
-                </div>
-                <button type="submit" name="submit_testimony" class="btn-forum">Envoyer</button>
+               <div class="forumtext">
+        <form method="post" action="">
+            <textarea name="user_testimony" placeholder="Écrivez votre témoignage en toute anonymat..."></textarea>
+            <div class="btn-forumm">
+            <button type="submit" name="submit_testimony" class="btn-forum">Envoyer</button>
+            </div>
+        </form>
+    </div>
+                
             <?php else : ?>
                 <p class="error-msg">Vous avez atteint la limite de 5 témoignages.</p>
             <?php endif; ?>

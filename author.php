@@ -46,7 +46,9 @@ $feelings = get_user_meta($user_id, 'feelings', true);
     <?php if (isset($success_message)) echo $success_message; ?>
 
     <div class="container">
-    <p class="question">Comment vous sentez-vous aujourd’hui ?</p>
+    <p class="question">Écrivez tout ce que vous désirez, <br>
+    Ceci est votre jardin secret. 💜
+    </p>
     <div class="input-area">
         <textarea placeholder="Écrivez ici..." class="text-input"></textarea>
     </div>
