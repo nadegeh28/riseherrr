@@ -11,34 +11,46 @@
 
         <div class="blog-card py-5">
     <div class="row justify-content-center">
+      <div class="custom-card" style="width: 18rem;">
+      <img src="<?php echo get_template_directory_uri(); ?>/assets/img/blog1.png" alt="blog" class="blog-image">
+  <div class="card-body">
+    <p class="blog-titre">Féminicides : la Belgique toujours à la traine sur la collecte des données</hp>
+    <br>
+    <a href="#" class="btn btn-primary">Lire l'article</a>
+  </div>
+</div>
 
-      <div class="col-md-4 mb-4">
-        <div class="custom-card">
-          <div class="card-blog">
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/blog1.png" alt="blog" class="blog-image">
-            Féminicides : la Belgique toujours à la traine sur la collecte des données
-          </div>
-        </div>
-      </div>
-  
-      <div class="col-md-4 mb-4">
-        <div class="custom-card">
-          <div class="card-blog">
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/blog2.jpg" alt="blog" class="blog-image">
-            Les violences psychologiques : l'arme invisible de la domination
-          </div>
-        </div>
-      </div>
 
-      <div class="col-md-4 mb-4">
-        <div class="custom-card">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/blog3.jpg" alt="blog" class="blog-image">
-          <div class="card-blog">
-            La reconstruction après les violences : Un chemin vers soi
-          </div>
-        </div>
-      </div>
-    </div>
+
+      <div class="blog-card py-5">
+    <div class="row justify-content-center">
+      <div class="custom-card" style="width: 18rem;">
+      <img src="<?php echo get_template_directory_uri(); ?>/assets/img/blog2.jpg" alt="blog" class="blog-image">
+  <div class="card-body">
+    <p class="blog-titre">Les violences psychologiques : l'arme invisible de la domination</p>
+    <br>
+    <a href="#" class="btn btn-primary">Lire l'article</a>
+  </div>
+</div>
+</div>
+
+
+
+<div class="blog-card py-5">
+    <div class="row justify-content-center">
+      <div class="custom-card" style="width: 18rem;">
+      <img src="<?php echo get_template_directory_uri(); ?>/assets/img/blog3.jpg" alt="blog" class="blog-image3">
+  <div class="card-body">
+    <p class="blog-titre">La reconstruction après les violences : Un chemin vers soi</p>
+    <br>
+    <a href="#" class="btn btn-primary">Lire l'article</a>
+  </div>
+</div>
+</div>
+
+
+
+
 
 
 
