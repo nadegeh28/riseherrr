@@ -58,6 +58,7 @@ $feelings = get_user_meta($user_id, 'feelings', true);
 </div>
 
 
+
 <div class="msg">
     <p class="msg-rappel">Vous n’êtes pas seule. Si vous êtes victime de violences ou connaissez 
     quelqu’un qui a besoin d’aide, voici les ressources disponibles en Belgique :</p>
@@ -81,6 +82,26 @@ $feelings = get_user_meta($user_id, 'feelings', true);
 
 <br><br><br><br><br><br>
 
+
+<script>
+    const saveButton = document.getElementById('saveButton');
+const secretTextarea = document.getElementById('secretTextarea');
+
+// Vérifier si le texte est déjà stocké dans localStorage
+if (localStorage.getItem('secretText')) {
+    secretTextarea.value = localStorage.getItem('secretText'); // Remplir le textarea avec le texte stocké
+}
+
+// Ajouter un événement au bouton "Mettre à jour"
+saveButton.addEventListener('click', () => {
+    const userText = secretTextarea.value; // Récupérer le texte de la zone de texte
+
+    // Sauvegarder le texte dans localStorage sans vérifier si le champ est vide
+    localStorage.setItem('secretText', userText); // Sauvegarder dans localStorage
+    alert("Votre jardin secret a été mis à jour !"); // Alerte de confirmation
+});
+
+</script>
 
 
 

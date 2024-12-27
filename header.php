@@ -20,7 +20,7 @@
 <div class="top-bar">
 <?php if (is_user_logged_in()) : ?>
     <?php $current_user = wp_get_current_user(); ?>
-                <a href="<?php echo 'https://riseher.emu.isfsc.be/author/' . $author->user_login; ?>" class="log">Mon Profil</a>
+             <a href="https://riseher.emu.isfsc.be/author/<?php echo $current_user->user_login; ?>" class="log">Mon Profil</a>
                 <a href="<?php echo wp_logout_url('https://riseher.emu.isfsc.be/'); ?>" class="log">Se déconnecter</a>
             <?php else : ?>
                 <a href="https://riseher.emu.isfsc.be/connexion/" class="log">Se connecter</a>
