@@ -49,11 +49,14 @@ $feelings = get_user_meta($user_id, 'feelings', true);
     <p class="question">Écrivez tout ce que vous désirez, <br>
     Ceci est votre jardin secret. 💜
     </p>
-    <div class="input-area">
-        <textarea  class="text-input" placeholder="Écrivez ici..."></textarea>
-    </div>
-    <button class="update-button">Mettre à jour</button>
+    <form id="secretForm">
+        <div class="input-area">
+            <textarea class="text-input" placeholder="Écrivez ici..." id="secretTextarea"></textarea>
+            <button type="button" class="update-button" id="saveButton">Mettre à jour</button>
+        </div>
+    </form>
 </div>
+
 
 <div class="msg">
     <p class="msg-rappel">Vous n’êtes pas seule. Si vous êtes victime de violences ou connaissez 

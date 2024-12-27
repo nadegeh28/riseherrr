@@ -1333,6 +1333,7 @@ font-weight:bold;
 
 .update-button:hover {
   background-color: #722f60;
+  color: #F2E4EE;
 }
 
 @media (max-width: 768px) {
