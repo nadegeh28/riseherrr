@@ -6,16 +6,16 @@
     </div>
     <!-- Section Help -->
     <div class="footer-help">
-      <p class="footer-titre">Help</p>
+      <h4 class="footer-titre">Help</h4>
       <ul>
         <li><a href="https://riseher.emu.isfsc.be/mentions-legales/">Mentions Légales</a></li>
         <li><a href="https://riseher.emu.isfsc.be/conditions-generales/">Conditions générales</a></li>
         <li><a href="https://riseher.emu.isfsc.be/a-propos/">À propos</a></li>
       </ul>
     </div>
-    <!-- Section Contact -->
+
     <div class="footer-contact">
-      <p class="footer-titre">Contact</p>
+      <h4 class="footer-titre">Contact</h4>
       <p>E-mail: <a href="mailto:contact@riseher.com">contact@riseher.com</a></p>
       <p>Téléphone: +32 2 312 54 76</p>
       <p>Adresse: 111 Rue de la Poste<br>1030 Bruxelles<br>Belgique</p>

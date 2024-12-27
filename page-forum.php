@@ -89,7 +89,7 @@
             if ($user_comment_count < 5) : ?>
                <div class="forumtext">
         <form method="post" action="">
-            <textarea name="user_testimony" placeholder="Écrivez votre témoignage en toute anonymat..."></textarea>
+            <textarea name="user_testimony" class="forum-place" placeholder="Écrivez votre témoignage en toute anonymat..."></textarea>
             <button type="submit" name="submit_testimony" class="btn-forum">Envoyer</button>
         </form>
     </div>

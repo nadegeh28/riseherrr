@@ -20,8 +20,8 @@
 
 
 <p class="author-message">
-    « Tu mérites d’être aimée avec respect, douceur et dignité. 
-    Ne laisse jamais la violence définir ta valeur, car en toi réside 
+    « Tu mérites d’être aimée avec respect, douceur et dignité. <br>
+    Ne laisse jamais la violence définir ta valeur, car en toi réside <br>
     une force immense et une lumière qui mérite tout ce qu’il y a de meilleur. »
 </p>
 
@@ -50,23 +50,23 @@ $feelings = get_user_meta($user_id, 'feelings', true);
     Ceci est votre jardin secret. 💜
     </p>
     <div class="input-area">
-        <textarea placeholder="Écrivez ici..." class="text-input"></textarea>
+        <textarea  class="text-input" placeholder="Écrivez ici..."></textarea>
     </div>
     <button class="update-button">Mettre à jour</button>
 </div>
 
 <div class="msg">
-    <p>Vous n’êtes pas seule. Si vous êtes victime de violences ou connaissez 
+    <p class="msg-rappel">Vous n’êtes pas seule. Si vous êtes victime de violences ou connaissez 
     quelqu’un qui a besoin d’aide, voici les ressources disponibles en Belgique :</p>
 
-    <p>0800 30 030 : Écoute violences conjugales <br>
+    <p class="msg-rappel">0800 30 030 : Écoute violences conjugales <br>
     112 : Numéro d’urgence pour contacter la police, les pompiers <br>
     ou les services médicaux en cas de danger immédiat.</p>
 
-    <p>Vous n’êtes pas seule. Si vous êtes victime de violences ou connaissez 
+    <p class="msg-rappel">Vous n’êtes pas seule. Si vous êtes victime de violences ou connaissez 
     quelqu’un qui a besoin d’aide, voici les ressources disponibles en Belgique :</p>
 
-    <p>Pour des informations et ressources complémentaires, consultez notre page 
+    <p class="msg-rappel">Pour des informations et ressources complémentaires, consultez notre page 
     dédiée de contact.</p>
 
 
