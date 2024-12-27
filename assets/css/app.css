@@ -718,24 +718,30 @@ font-size: 12px;
   border-radius: 50px;
 }
 
-.options label.active {
-  background-color: #8C3A76;  /* Couleur de fond quand sélectionné */
-  color: #F2E4EE;  /* Couleur du texte quand sélectionné */
-  border-radius: 50px;  /* Bordure arrondie */
-}
 
-/* Style appliqué quand l'option est cochée */
+
 .options input[type="radio"]:checked + label {
   background-color: #8C3A76;
   color: #F2E4EE;
   border-radius: 50px;
 }
 
+.options input[type="radio"]:checked {
+  display: none; 
+  background-color: #8C3A76;
+  color: #F2E4EE;
+}
+.options input[type="radio"]:checked + label {
+  background-color: #8C3A76;
+  color: #F2E4EE;
+  border-radius: 50px;
+}
+
+
 .btn-submit {
   display: inline-block;
   padding: 10px 20px;
   font-size: 18px;
-  font-weight: bold;
   text-align: center;
   border: none;
   border-radius: 50px;
@@ -745,11 +751,32 @@ font-size: 12px;
   color: #F2E4EE;
 }
 
+
+.btn-submit:hover {
+  background-color: #722f60;
+}
+
 .questionnaire-form .btn-container {
   text-align: center; /* Centrer le conteneur du bouton */
   margin-top: 100px;
   margin-bottom: 200px; /* Espacement au-dessus du bouton */
 }
+
+.result{
+  background-color: #F2E4EE; 
+    color: #8C3A76; 
+    border: 1px solid #8C3A76;
+    padding: 20px;
+    border-radius: 15px; 
+    max-width: 80%; 
+    margin: 20px auto; 
+    font-size: 16px; 
+    line-height: 1.5; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+
 
 /* Adaptation pour les écrans plus petits */
 @media (max-width: 768px) {
@@ -1076,12 +1103,11 @@ font-weight:bold;
   right: -50px;
   padding: 10px 20px;
   background-color: #8C3A76;
-  color: white;
+  color: #F2E4EE;
   border: none;
   cursor: pointer;
   border-radius: 30px; 
   font-size: 15px;
-  font-weight: bold;
 }
 
 
@@ -1182,7 +1208,7 @@ font-weight:bold;
   right: -50px;
   padding: 10px 20px;
   background-color: #8C3A76;
-  color: white;
+  color: #F2E4EE;
   border: none;
   cursor: pointer;
   border-radius: 30px; 
@@ -1304,8 +1330,7 @@ font-weight:bold;
 
 
 .text-input {
-  width: 100%; /* Ajuste à 90% de la largeur du conteneur */
-  max-width: 700px; /* Largeur maximale pour éviter de dépasser */
+  max-width: 700px; 
   height: 600px; 
   border: none;
   resize: none;
@@ -1320,17 +1345,17 @@ font-weight:bold;
 
 
 .update-button {
-  width: auto; /* Laisse le bouton s'ajuster à son contenu */
-  min-width: 120px; /* Largeur minimale pour éviter les coupures */
+  width: auto; 
+  min-width: 120px; 
   align-self: flex-end;
   background-color: #F2E4EE;
   color: #8C3A76;
   border: none;
   border-radius: 50px;
-  padding: 10px 15px; /* Plus d'espace pour le texte */
+  padding: 10px 15px; 
   font-size: 14px;
   cursor: pointer;
-  text-align: center; /* Centrer le texte */
+  text-align: center; 
   transition: background-color 0.3s ease, transform 0.2s ease;
 }
 

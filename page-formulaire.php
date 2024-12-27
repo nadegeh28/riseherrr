@@ -20,8 +20,8 @@
 </div>
 
 
+<form class="questionnaire-form" id="questionnaireForm" method="get" action="">
 
-<form class="questionnaire-form" action="#" method="post">
     <div class="form-group">
         <label for="question1">1. Y a-t-il des personnes ou des situations qui vous mettent particulièrement mal à l’aise ?</label>
         <div class="options">
@@ -124,46 +124,13 @@
         </div>
     </div>
 
+
+    <div id="result">
+
     <div class="btn-container">
         <button type="submit" class="btn-submit">Soumettre le formulaire</button>
     </div>
 </form>
-
-<script>
-    function calculateResult() {
-      // Récupérer toutes les réponses
-      const form = document.getElementById('questionnaireForm');
-      const inputs = form.querySelectorAll('input[type="radio"]:checked');
-
-      // Compteur pour chaque groupe de réponses
-      let countA = 0;
-      let countB = 0;
-      let countC = 0;
-      let countD = 0;
-      let countE = 0;
-
-      // Parcourir les réponses sélectionnées
-      inputs.forEach(input => {
-        if (input.value === "A") countA++;
-        if (input.value === "B") countB++;
-        if (input.value === "C") countC++;
-        if (input.value === "D") countD++;
-        if (input.value === "E") countE++;
-      });
-
-      // Calculer le résultat
-      const resultElement = document.getElementById('result');
-      if (countA > countB && countA > countC + countD + countE) {
-        resultElement.textContent = "Résultat : A) Vous êtes dans une situation très inconfortable.";
-      } else if (countB + countC > countA && countB + countC > countD + countE) {
-        resultElement.textContent = "Résultat : B) Vous ressentez parfois de l'inconfort ou des doutes.";
-      } else if (countD + countE > countA && countD + countE > countB + countC) {
-        resultElement.textContent = "Résultat : C) Vous êtes globalement dans une situation saine.";
-      } else {
-        resultElement.textContent = "Résultat : Les réponses sont trop équilibrées pour conclure.";
-      }
-    }
-  </script>
 
 
 
@@ -171,6 +138,69 @@
 
 
 </div>
+
+
+
+
+</div>
+
+
+<script>
+
+function calculateResult() {
+    // Récupérer toutes les réponses
+    const form = document.getElementById('questionnaireForm');
+    const inputs = form.querySelectorAll('input[type="radio"]:checked');
+
+    // Compteur pour chaque groupe de réponses
+    let countA = 0;
+    let countB = 0;
+    let countC = 0;
+    let countD = 0;
+    let countE = 0;
+
+    // Parcourir les réponses sélectionnées
+    inputs.forEach(input => {
+        if (input.value === "A") countA++;
+        if (input.value === "B") countB++;
+        if (input.value === "C") countC++;
+        if (input.value === "D") countD++;
+        if (input.value === "E") countE++;
+    });
+
+    // Calculer le résultat
+    const result = {};
+    if (countA > countB && countA > countC + countD + countE) {
+        result.text = "Résultat : A) Vous êtes dans une situation très inconfortable. Les réponses sélectionnées indiquent un environnement relationnel qui pourrait être toxique. Il semble que vous éprouviez un manque de respect, une manipulation émotionnelle et une atteinte à votre confiance en vous. Il est recommandé de rechercher du soutien auprès d’un professionnel ou d’un proche de confiance pour vous aider à prendre du recul et à évaluer vos options.";
+    } else if (countB + countC > countA && countB + countC > countD + countE) {
+        result.text = "Résultat : B) Vous ressentez parfois de l'inconfort ou des doutes. Certaines réponses montrent qu'il existe des moments où vous vous sentez mal à l'aise dans vos relations, mais il semble que vous soyez capable de prendre du recul. Cependant, il est important de rester vigilante et de vous assurer que vous êtes dans des relations qui respectent vos besoins et votre bien-être émotionnel. Prenez soin de vous et n'hésitez pas à consulter des ressources extérieures si nécessaire.";
+    } else if (countD + countE > countA && countD + countE > countB + countC) {
+        result.text = "Résultat : C) Vous êtes globalement dans une situation saine. Les réponses que vous avez sélectionnées indiquent que vous êtes entourée de personnes qui vous respectent, vous écoutent et vous soutiennent. Vous êtes libre de vos choix et vous vous sentez généralement en sécurité et écoutée. Il est important de continuer à nourrir ces relations saines et de prendre soin de votre bien-être émotionnel.";
+    } else {
+        result.text = "Résultat : Les réponses sont trop équilibrées pour conclure. Il semble qu'il y ait une variété d'expériences dans vos réponses, ce qui rend difficile de déterminer une tendance claire. Prenez le temps de réfléchir à vos relations et à votre bien-être pour mieux comprendre la situation.";
+    }
+
+    // Ajouter les résultats dans l'URL (en tant que paramètre de requête)
+    const urlParams = new URLSearchParams();
+    urlParams.set('result', result.text);
+    window.location.search = urlParams.toString(); // Recharger la page avec le paramètre
+}
+
+// Si le formulaire est soumis, appeler la fonction de calcul
+document.getElementById('questionnaireForm').addEventListener('submit', function(event) {
+    event.preventDefault(); // Empêcher la soumission immédiate
+    calculateResult(); // Calculer les résultats
+});
+
+// Vérifier si un résultat est passé via l'URL
+const urlParams = new URLSearchParams(window.location.search);
+const result = urlParams.get('result');
+if (result) {
+    // Afficher les résultats récupérés de l'URL
+    document.getElementById('result').textContent = result;
+}
+</script>
+
 <?php get_footer(); ?>
 
 
