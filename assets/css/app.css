@@ -298,77 +298,76 @@ nav ul li a:hover {
   transform: scale(1.1);
 }
 
-/* RESPONSIVE DESIGN */
 
-/* Écran ≤ 768px */
 @media (max-width: 768px) {
   .footer {
-      padding: 20px; /* Réduction du padding global */
+      padding: 20px; 
   }
   .footer-container {
-      gap: 15px; /* Réduction de l'espacement entre les colonnes */
+      gap: 15px; 
   }
   .footer h4 {
-      font-size: 1rem; /* Réduction de la taille des titres */
+      font-size: 1rem; 
   }
   .footer-help ul li {
       margin-bottom: 3px;
   }
   .footer-contact p {
-      font-size: 14px; /* Texte légèrement plus petit */
+      font-size: 14px; 
   }
   .footer-social a img {
-      width: 20px; /* Réduction des icônes */
+      width: 20px; 
       height: 20px;
   }
 }
 
 
 
-/* Écran ≤ 480px */
+
+
 @media (max-width: 480px) {
   .footer {
-      padding: 15px; /* Padding réduit pour s'adapter aux petits écrans */
+      padding: 15px; 
   }
   .footer-container {
-      flex-direction: column; /* Les colonnes deviennent des lignes */
-      align-items: center; /* Centrage des éléments */
-      text-align: center; /* Alignement central du texte */
-      gap: 10px; /* Espacement réduit */
+      flex-direction: column; 
+      align-items: center; 
+      text-align: center; 
+      gap: 10px; 
   }
   .footer h4 {
-      font-size: 20px; /* Titres plus petits */
+      font-size: 20px; 
   }
   .footer-help ul li {
-      font-size: 0.85rem; /* Texte plus petit */
+      font-size: 0.85rem; 
   }
   .footer-contact p {
-      font-size: 12px; /* Texte plus petit */
+      font-size: 12px; 
   }
   .footer-social a img {
-      width: 18px; /* Icônes plus petites */
+      width: 18px; 
       height: 18px;
   }
 }
 
   
   
-/* Container principal pour la section de bienvenue */
+
 .welcome-container {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-wrap: wrap; /* Permet à la section de se réorganiser sur les petits écrans */
-  gap: 20px; /* Espace entre l'image et le texte */
-  max-width: 1200px; /* Limite la largeur sur grand écran */
+  flex-wrap: wrap;
+  gap: 20px; 
+  max-width: 1200px; 
   margin: 0 auto;
-  margin-bottom: 150px; /* Marge sous la section */
+  margin-bottom: 150px; 
 }
 
-/* Image circulaire */
+
 .welcome-image {
   flex: 1;
-  max-width: 400px; /* Limite la taille maximale de l'image */
+  max-width: 400px; 
   text-align: center;
 }
 
