@@ -122,31 +122,19 @@
             <label for="option10D"><input type="radio" id="option10D" name="question10" value="D">D. Rarement</label>
             <label for="option10E"><input type="radio" id="option10E" name="question10" value="E">E. Jamais</label>
         </div>
-    </div>
-
-
-    <div id="result">
+    </div>    
 
     <div class="btn-container">
         <button type="submit" class="btn-submit">Soumettre le formulaire</button>
     </div>
 </form>
 
-
-
-
-
-
-</div>
-
-
-
+<div id="result"></div>
 
 </div>
 
 
 <script>
-
 function calculateResult() {
     // Récupérer toutes les réponses
     const form = document.getElementById('questionnaireForm');
@@ -198,10 +186,11 @@ const result = urlParams.get('result');
 if (result) {
     // Afficher les résultats récupérés de l'URL
     document.getElementById('result').textContent = result;
+
+    // Descendre automatiquement sur la div contenant le résultat
+    const resultElement = document.getElementById('result');
+    resultElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
 }
 </script>
 
 <?php get_footer(); ?>
-
-
-

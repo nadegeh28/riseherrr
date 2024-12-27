@@ -757,15 +757,15 @@ font-size: 12px;
 }
 
 .questionnaire-form .btn-container {
-  text-align: center; /* Centrer le conteneur du bouton */
+  text-align: center; 
   margin-top: 100px;
-  margin-bottom: 200px; /* Espacement au-dessus du bouton */
+  margin-bottom: 200px; 
 }
 
-.result{
-  background-color: #F2E4EE; 
-    color: #8C3A76; 
-    border: 1px solid #8C3A76;
+
+#result{
+  background-color: #8C3A76;
+    color: #F2E4EE; 
     padding: 20px;
     border-radius: 15px; 
     max-width: 80%; 
@@ -776,6 +776,11 @@ font-size: 12px;
     position: relative;
 }
 
+
+#result.show {
+  display: block; 
+  opacity: 1;
+}
 
 
 /* Adaptation pour les écrans plus petits */
@@ -1316,21 +1321,21 @@ font-weight:bold;
 
 
 .input-container {
-  width: 300px;
-  height: 400px;
   background-color: #FFFFFF;
   border-radius: 25px;
   padding: 20px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  height: 350px;
   box-sizing: border-box;
+  width: 100%; /* Adapte à la largeur du conteneur */
+  display: flex;
+  justify-content: center;
 }
 
 
 .text-input {
-  max-width: 700px; 
+  width: 100%; 
+  max-width: 500px; 
   height: 600px; 
   border: none;
   resize: none;
@@ -1569,6 +1574,33 @@ h6{
   margin-bottom: 80px;
   text-align: center;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 #exit-button {
