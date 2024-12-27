@@ -11,29 +11,29 @@
 
         <div class="blog-card py-5">
     <div class="row justify-content-center">
-      <!-- Card 1 -->
+
       <div class="col-md-4 mb-4">
-        <div class="custom-card card-red">
-          <div class="card-image" style="background-image: url('your-image1-url.jpg');"></div>
-          <div class="card-footer">
+        <div class="custom-card">
+          <div class="card-blog">
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/blog1.png" alt="blog" class="blog-image">
             Féminicides : la Belgique toujours à la traine sur la collecte des données
           </div>
         </div>
       </div>
-      <!-- Card 2 -->
+  
       <div class="col-md-4 mb-4">
-        <div class="custom-card card-blue">
-          <div class="card-image" style="background-image: url('your-image2-url.jpg');"></div>
-          <div class="card-footer">
+        <div class="custom-card">
+          <div class="card-blog">
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/blog2.jpg" alt="blog" class="blog-image">
             Les violences psychologiques : l'arme invisible de la domination
           </div>
         </div>
       </div>
-      <!-- Card 3 -->
+
       <div class="col-md-4 mb-4">
-        <div class="custom-card card-purple">
-          <div class="card-image" style="background-image: url('your-image3-url.jpg');"></div>
-          <div class="card-footer">
+        <div class="custom-card">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/blog3.jpg" alt="blog" class="blog-image">
+          <div class="card-blog">
             La reconstruction après les violences : Un chemin vers soi
           </div>
         </div>
