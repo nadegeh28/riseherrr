@@ -129,6 +129,42 @@
     </div>
 </form>
 
+<script>
+    function calculateResult() {
+      // Récupérer toutes les réponses
+      const form = document.getElementById('questionnaireForm');
+      const inputs = form.querySelectorAll('input[type="radio"]:checked');
+
+      // Compteur pour chaque groupe de réponses
+      let countA = 0;
+      let countB = 0;
+      let countC = 0;
+      let countD = 0;
+      let countE = 0;
+
+      // Parcourir les réponses sélectionnées
+      inputs.forEach(input => {
+        if (input.value === "A") countA++;
+        if (input.value === "B") countB++;
+        if (input.value === "C") countC++;
+        if (input.value === "D") countD++;
+        if (input.value === "E") countE++;
+      });
+
+      // Calculer le résultat
+      const resultElement = document.getElementById('result');
+      if (countA > countB && countA > countC + countD + countE) {
+        resultElement.textContent = "Résultat : A) Vous êtes dans une situation très inconfortable.";
+      } else if (countB + countC > countA && countB + countC > countD + countE) {
+        resultElement.textContent = "Résultat : B) Vous ressentez parfois de l'inconfort ou des doutes.";
+      } else if (countD + countE > countA && countD + countE > countB + countC) {
+        resultElement.textContent = "Résultat : C) Vous êtes globalement dans une situation saine.";
+      } else {
+        resultElement.textContent = "Résultat : Les réponses sont trop équilibrées pour conclure.";
+      }
+    }
+  </script>
+
 
 
 

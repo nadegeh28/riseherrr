@@ -26,24 +26,6 @@
 </p>
 
 
-    <?php
-if (isset($_POST['update_feelings'])) {
-    $user_id = get_current_user_id();
-    $feelings = sanitize_text_field($_POST['feelings']);
-
-
-    update_user_meta($user_id, 'feelings', $feelings);
-
-    $success_message = '<p class="feedback-message fade-in">Journal mis à jour avec succès.</p>';
-}
-
-// Récupération des ressentis existants
-$user_id = get_current_user_id();
-$feelings = get_user_meta($user_id, 'feelings', true);
-?>
-
-
-    <?php if (isset($success_message)) echo $success_message; ?>
 
     <div class="container">
     <p class="question">Écrivez tout ce que vous désirez, <br>

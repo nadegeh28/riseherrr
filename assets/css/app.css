@@ -1275,7 +1275,7 @@ font-weight:bold;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+ justify-content: center;
   margin: 50px auto;
   margin-bottom: 60px;
 }
@@ -1288,7 +1288,7 @@ font-weight:bold;
   margin-bottom: 10px;
 }
 
-/* Conteneur pour la zone de texte et le bouton */
+
 .input-container {
   width: 300px;
   height: 400px;
@@ -1302,10 +1302,11 @@ font-weight:bold;
   box-sizing: border-box;
 }
 
-/* Zone de texte */
+
 .text-input {
-  width: 500px;
-  height: 600px;
+  width: 100%; /* Ajuste à 90% de la largeur du conteneur */
+  max-width: 700px; /* Largeur maximale pour éviter de dépasser */
+  height: 600px; 
   border: none;
   resize: none;
   border-radius: 10px;
@@ -1313,7 +1314,9 @@ font-weight:bold;
   padding: 10px;
   color: #8C3A76;
   box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+
 }
+
 
 
 .update-button {
