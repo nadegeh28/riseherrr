@@ -10,10 +10,9 @@
         </div>
         <br>
 
-        <!-- Blog Cards Section -->
         <div class="blog-containerr">
             <div class="row justify-content-center">
-                <!-- Card 1 -->
+          
                 <div class="col-md-4 mb-4">
                     <div class="custom-card card h-100">
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/img/blog1.png" alt="blog" class="card-img-top blog-image">
@@ -35,7 +34,7 @@
                     </div>
                 </div>
 
-                <!-- Card 3 -->
+               
                 <div class="col-md-4 mb-4">
                     <div class="custom-card card h-100">
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/img/blog3.jpg" alt="blog" class="card-img-top blog-image">
