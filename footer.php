@@ -23,13 +23,15 @@
     <!-- Section Réseaux sociaux -->
     <div class="footer-social">
       <a href="https://instagram.com" target="_blank" aria-label="Instagram">
-        <img src="assets/icons/instagram-icon.png" alt="Instagram">
+      <img src="<?php echo get_template_directory_uri(); ?>/assets/img/insta.png" alt="icone">
       </a>
       <a href="https://facebook.com" target="_blank" aria-label="Facebook">
-        <img src="assets/icons/facebook-icon.png" alt="Facebook">
+      href="https://instagram.com" target="_blank" aria-label="Instagram">
+      <img src="<?php echo get_template_directory_uri(); ?>/assets/img/fcbk.png" alt="icone">
       </a>
       <a href="https://twitter.com" target="_blank" aria-label="Twitter">
-        <img src="assets/icons/twitter-icon.png" alt="Twitter">
+      href="https://instagram.com" target="_blank" aria-label="Instagram">
+      <img src="<?php echo get_template_directory_uri(); ?>/assets/twitter.png" alt="icone">
       </a>
     </div>
   </div>
