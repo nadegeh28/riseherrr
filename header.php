@@ -17,7 +17,7 @@
 <div class="main-content">
 
 
-<div class="top-bar">
+<div class="top-bar fade-in">
 <?php if (is_user_logged_in()) : ?>
     <?php $current_user = wp_get_current_user(); ?>
              <a href="https://riseher.emu.isfsc.be/author/<?php echo $current_user->user_login; ?>" class="log">Mon Profil</a>
@@ -28,19 +28,19 @@
             <?php endif; ?>
     </div>
 
-    <header fade-in>
-        <nav class="navbar">
+    <header class="fade-in">
+        <nav class="navbar fade-in">
             <ul class="nav-left">
                 <li><a href="https://riseher.emu.isfsc.be">Accueil</a></li>
                 <li><a href="https://riseher.emu.isfsc.be/a-propos/">À propos</a></li>
                 <li><a href="https://riseher.emu.isfsc.be/contact/">Contact</a></li>
             </ul>
             
-            <div class="logo">
+            <div class="logo fade-in">
             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logoclair.png" alt="logo">
             </div>
             
-            <ul class="nav-right">
+            <ul class="nav-right fade-in">
                 <li><a href="https://riseher.emu.isfsc.be/forum/">Forum</a></li>
                 <li><a href="https://riseher.emu.isfsc.be/blog/">Blog</a></li>
                 <li><a href="https://riseher.emu.isfsc.be/formulaire/">Formulaire</a></li>
@@ -52,7 +52,7 @@
 
     </header>
 
-    <button id="exit-button">Sortir</button>
+    <button id="exit-button" class="fade-in">Sortir</button>
 
 
 </div>
