@@ -75,7 +75,7 @@ Ces mécanismes visent à établir un pouvoir sur la victime, souvent sans qu’
 </section>
 
 <section>
-    <h5>LPourquoi est-il si difficile de reconnaître cette violence ?</h5>
+    <h5>Pourquoi est-il si difficile de reconnaître cette violence ?</h5>
 
         <p>
         
@@ -99,20 +99,46 @@ Ces mécanismes visent à établir un pouvoir sur la victime, souvent sans qu’
 </section>
 
 <section>
-<section>
     <h5>Les conséquences sur les victimes</h5>
 
         <p>
         
-        Le manque de sensibilisation sur la violence psychologique en est une des raisons principales. 
-        Dans de nombreuses cultures, ce type de comportement est minimisé ou même accepté comme partie intégrante des relations.
+        La violence psychologique a des impacts profonds, comparables, voire parfois plus graves, 
+        que ceux des violences physiques. Les victimes peuvent développer :
 
         </p>
 
         <p> 
-        Absence de preuves tangibles : Sans traces physiques, 
-        il est plus difficile de prouver la violence ou de convaincre autrui de sa réalité.
+        Une baisse drastique de l’estime de soi, jusqu’à l’auto-dévalorisation.<br>
+        Des troubles de santé mentale comme l’anxiété, la dépression ou le stress post-traumatique.<br>
+        Une perte d’autonomie ou une incapacité à prendre des décisions pour elles-mêmes.<br>
+        Un sentiment d’isolement social.<br>
+Avec le temps, ces effets peuvent affecter la capacité des victimes à s’épanouir dans d’autres aspects de leur vie, que ce soit au travail, en famille ou en amitié.
         </p>
+</section>
+
+<section>
+    <h5>Reconnaître et agir</h5>
+    <strong class="contact">Il est crucial de briser le silence autour de la violence psychologique. Voici quelques étapes pour agir :</strong>
+
+        <p>
+        Reconnaître les signes : Si vous sentez qu’une relation vous rend malheureux, confus ou que vous marchez constamment sur des œufs, posez-vous des questions.<br>
+Parlez-en : Confiez-vous à un ami, un membre de la famille ou un professionnel.<br>
+Demandez de l’aide : Il existe des lignes d’écoute et des associations pour soutenir les victimes.<br>
+Mettez des limites : Apprenez à dire non et à vous protéger des comportements toxiques.<br>
+</p>
+
+</section>
+
+<section>
+    <h5>Ressources utiles</h5>
+    <p>Si vous êtes victime ou témoin de violence psychologique, n’attendez pas pour demander de l’aide :</P>
+        <p>
+        0800 30 030 : Violences conjugales (écoute confidentielle et gratuite).<br>
+SOS Violences conjugales : Offrent un soutien émotionnel et des conseils pratiques.<br>
+Centres de prise en charge des violences sexuelles (CPVS) : Pour un accompagnement global.<br>
+</p>
+
 </section>
 
     </div>

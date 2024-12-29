@@ -19,7 +19,7 @@
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/img/blog1.png" alt="blog" class="card-img-top blog-image">
                         <div class="card-body">
                             <p class="blog-titre">Féminicides : la Belgique toujours à la traine sur la collecte des données</p>
-                            <a href="#" class="btn btn-primary">Lire l'article</a>
+                            <a href="https://riseher.emu.isfsc.be/article-1/" class="btn btn-primary">Lire l'article</a>
                         </div>
                     </div>
                 </div>
@@ -30,7 +30,7 @@
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/img/blog2.jpg" alt="blog" class="card-img-top blog-image">
                         <div class="card-body">
                             <p class="blog-titre">Les violences psychologiques : l'arme invisible de la domination</p>
-                            <a href="#" class="btn btn-primary">Lire l'article</a>
+                            <a href="https://riseher.emu.isfsc.be/article-2/" class="btn btn-primary">Lire l'article</a>
                         </div>
                     </div>
                 </div>
@@ -41,7 +41,7 @@
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/img/blog3.jpg" alt="blog" class="card-img-top blog-image">
                         <div class="card-body">
                             <p class="blog-titre">La reconstruction après les violences : Un chemin vers soi</p>
-                            <a href="#" class="btn btn-primary">Lire l'article</a>
+                            <a href="https://riseher.emu.isfsc.be/article-3/" class="btn btn-primary">Lire l'article</a>
                         </div>
                     </div>
                 </div>
