@@ -18,7 +18,7 @@
         </div>
     </div>
 
-    <div class="content">
+    <div class="content fade-in">
     <section>
     <h5>1. Comprendre le processus de guérison</h5>
 

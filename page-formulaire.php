@@ -2,10 +2,10 @@
 
 <div class="marge fade-in">
 
-<h1 class="noustitle">Êtes-vous victime de violence psychologique ? <br>
+<h1 class="noustitle fade-in">Êtes-vous victime de violence psychologique ? <br>
                       Faites le test pour le découvrir</h1>
 
-<div class="nouss-container">
+<div class="nouss-container fade-in">
     <div class="nous-container">
     <img src="<?php echo get_template_directory_uri(); ?>/assets/img/imgform.jpg" alt="img">
     </div>
@@ -20,7 +20,7 @@
 </div>
 
 
-<form class="questionnaire-form" id="questionnaireForm" method="get" action="">
+<form class="questionnaire-form fade-in" id="questionnaireForm" method="get" action="">
 
     <div class="form-group">
         <label for="question1">1. Y a-t-il des personnes ou des situations qui vous mettent particulièrement mal à l’aise ?</label>

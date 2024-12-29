@@ -24,7 +24,7 @@
         </div>
     </div>
 
-    <div class="content">
+    <div class="content fade-in">
     <section>
     <h5>Qu’est-ce que la violence psychologique ?</h5>
 

@@ -30,9 +30,9 @@
 <section>
 
 
-<h4 class="titrecon">En Belgique, voici les numéros d'urgence importants pour les femmes victimes de violences physiques :</h4>
+<h4 class="titrecon fade-in">En Belgique, voici les numéros d'urgence importants pour les femmes victimes de violences physiques :</h4>
 <br><br>
-<div class="emergency-info">
+<div class="emergency-info fade-in">
     <br><br>
     <p class="contacttext">
         <strong class="contact" >112</strong> - Numéro d'urgence européen : Ce numéro est accessible 24h/24 et 7j/7 
@@ -55,9 +55,9 @@
 
 </div>
 
-<h5 class="contact2">Vous trouverez ci-dessous les coordonnées de nos spécialistes, prêtes à vous accompagner.</h5>
+<h5 class="contact2 fade-in">Vous trouverez ci-dessous les coordonnées de nos spécialistes, prêtes à vous accompagner.</h5>
 
-<div class="team-section">
+<div class="team-section fade-in">
     <div class="team-member">
         <img src="<?php echo get_template_directory_uri(); ?>/assets/img/avocate.jpg" alt="spec">
         <h3>Claire Marchand</h3>

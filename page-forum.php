@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 <div class="marge fade-in">
-    <h1 class="noustitle">Forum</h1>
+    <h1 class="noustitle fade-in">Forum</h1>
     <br><br>
     <div class="forum-text">
         <h6 class="titrecon">Bienvenue dans la communauté spécialement créée pour vous, 
@@ -23,11 +23,11 @@
 
     <section>
         <!-- Témoignages statiques -->
-        <hr class="title-underline">
+        <hr class="title-underline fade-in">
         <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icone.png" alt="rosef" class="roseforum">
-        <p class="rosenbr">rose002</p>
-        <div class="testimony-container">
-            <p class="forum-message">Après trois ans dans une relation toxique, je me sentais complètement brisée. 
+        <p class="rosenbr fade-in">rose002</p>
+        <div class="testimony-container fade-in">
+            <p class="forum-message fade-in">Après trois ans dans une relation toxique, je me sentais complètement brisée. 
                 Les forums de *Les Roses* ont été mon refuge. J’ai pu partager mes doutes et mes peurs sans jugement. 
                 Une membre m’a conseillé de prendre contact avec une psychologue via le site, ce que j’ai fait. 
                 Grâce à ce soutien, j’ai trouvé la force de quitter mon compagnon et de commencer une nouvelle vie. 

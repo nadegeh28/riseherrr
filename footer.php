@@ -1,4 +1,4 @@
-<footer class="footer">
+<footer class="footer fade-in">
   <div class="footer-container">
     <!-- Logo -->
     <div class="logo">

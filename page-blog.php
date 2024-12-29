@@ -1,9 +1,9 @@
 <?php get_header(); ?>
 <div class="marge fade-in">
     <div class="blog-containerr">
-        <h1 class="blog-container text-center">Blog</h1>
+        <h1 class="blog-container">Blog</h1>
     
-        <div class="blog-introduction text-center">
+        <div class="blog-introduction">
             <h6>Bienvenue dans notre section blog : un espace pour s’informer et agir.</h6>
             <p>Retrouvez ici une sélection d’articles essentiels qui dénoncent les féminicides en Belgique. Ce blog est conçu pour sensibiliser, informer et rendre visibles des drames trop souvent ignorés. Nous rassemblons des analyses, témoignages et actualités pour permettre à chacune de mieux comprendre et participer à la lutte contre ce fléau.</p>
             <p>Parce que chaque histoire mérite d’être entendue, et chaque injustice, combattue.</p>

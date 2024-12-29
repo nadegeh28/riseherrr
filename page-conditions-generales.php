@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 <div class="marge fade-in">
 
-<div class="conditions-generales-containerr">
+<div class="conditions-generales-containerr fade-in">
 <h1 class="conditions-generales-container">Conditions générales</h1>
 <hr class="title-underline">
 

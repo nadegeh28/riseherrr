@@ -2,7 +2,7 @@
 
 <div class="marge">
 
-<div class="author-container">
+<div class="author-container fade-in">
     <div class="author-profile d-flex align-items-center gap-3">
         <div class="author-image">
             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icone.png" alt="rosef" class="rose">
@@ -19,7 +19,7 @@
 </div>
 
 
-<p class="author-message">
+<p class="author-message fade-in">
     « Tu mérites d’être aimée avec respect, douceur et dignité. <br>
     Ne laisse jamais la violence définir ta valeur, car en toi réside <br>
     une force immense et une lumière qui mérite tout ce qu’il y a de meilleur. »
@@ -27,7 +27,7 @@
 
 
 
-    <div class="container">
+    <div class="container fade-in">
     <p class="question">Écrivez tout ce que vous désirez, <br>
     Ceci est votre jardin secret. 💜
     </p>
@@ -41,7 +41,7 @@
 
 
 
-<div class="msg">
+<div class="msg fade-in">
     <p class="msg-rappel">Vous n’êtes pas seule. Si vous êtes victime de violences ou connaissez 
     quelqu’un qui a besoin d’aide, voici les ressources disponibles en Belgique :</p>
 
