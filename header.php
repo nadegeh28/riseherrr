@@ -90,6 +90,36 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 </script>
 
+<script>
+
+function isElementInView(el) {
+  const rect = el.getBoundingClientRect();
+  return rect.top >= 0 && rect.bottom <= window.innerHeight;
+}
+
+
+window.addEventListener('scroll', function() {
+  const elements = document.querySelectorAll('.fade-in');
+  
+  elements.forEach(el => {
+    if (isElementInView(el)) {
+      el.classList.add('fade-in-visible');
+    }
+  });
+});
+
+
+window.addEventListener('load', function() {
+  const elements = document.querySelectorAll('.fade-in');
+  
+  elements.forEach(el => {
+    if (isElementInView(el)) {
+      el.classList.add('fade-in-visible');
+    }
+  });
+});
+</script>
+
 
 
 

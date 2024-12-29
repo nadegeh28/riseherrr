@@ -10,14 +10,30 @@ body {
   box-sizing: border-box; /* Inclut padding/margin dans la taille des éléments */
 }
 
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
 
 
-/* Conteneur général pour centrer le contenu */
+.fade-in-visible {
+  opacity: 1 !important;
+  transition: opacity 1s ease-out;
+}
+
+
+
 .marge {
   width: 100%;
-  max-width: 1200px; /* Largeur maximale pour le contenu */
-  margin: 0 auto; /* Centre horizontalement */
-  padding: 20px; /* Ajoute de l'espace autour */
+  max-width: 1200px; 
+  margin: 0 auto; 
+  padding: 20px; 
 }
 
 /* Styles pour les titres */
@@ -155,8 +171,8 @@ header {
 .nav-left a, .nav-right a {
   text-decoration: none;
   color: #F2E4EE;
-  font-size: 20px; /* Taille de police 20px pour PC */
-  white-space: nowrap; /* Empêche les éléments de passer à la ligne */
+  font-size: 20px; 
+  white-space: nowrap; 
 }
 
 /* Effet au survol */
@@ -289,8 +305,8 @@ nav ul li a:hover {
 }
 
 .footer-social a img {
-  width: 24px;
-  height: 24px;
+  width: 40px;
+  height: 40px;
   transition: transform 0.3s ease-in-out;
 }
 
