@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<div class="marge">
+<div class="marge fade-in">
 
 <h4 class="titrecon">Les violences psychologiques : l’arme invisible de la domination</h4>
 

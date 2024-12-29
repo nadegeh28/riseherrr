@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<div class="marge">
+<div class="marge fade-in">
 
 
 

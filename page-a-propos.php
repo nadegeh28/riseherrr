@@ -1,10 +1,10 @@
 <?php get_header(); ?>
 
-<div class="marge">
+<div class="marge fade-in">
 
 <h1 class="noustitle">Qui sommes-nous ?</h1>
 
-<div class="nouss-container">
+<div class="nouss-container fade-in">
         <div class="nous-container">
         <img src="<?php echo get_template_directory_uri(); ?>/assets/img/imgnous.jpg" alt="img" class="imgsite">
         </div>
@@ -34,7 +34,7 @@
         </div>
     </div>
 
-    <div class="content">
+    <div class="content fade-in">
     <section>
         <h5>L’origine de Rise Her</h5>
         <p>

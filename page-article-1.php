@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<div class="marge">
+<div class="marge fade-in">
 
 <h4 class="titrecon">Féminicides : la Belgique toujours à la traîne sur la collecte des données</h4>
 

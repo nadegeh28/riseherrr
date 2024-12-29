@@ -28,7 +28,7 @@
             <?php endif; ?>
     </div>
 
-    <header>
+    <header fade-in>
         <nav class="navbar">
             <ul class="nav-left">
                 <li><a href="https://riseher.emu.isfsc.be">Accueil</a></li>
@@ -118,7 +118,30 @@ window.addEventListener('load', function() {
     }
   });
 });
+
+
+document.addEventListener('DOMContentLoaded', function () {
+  const fadeIns = document.querySelectorAll('.fade-in');
+
+  const observer = new IntersectionObserver(
+    (entries, observer) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target); // Supprime l'observation après l'animation
+        }
+      });
+    },
+    { threshold: 0.1 } // Déclenchement lorsque 10% de l'élément est visible
+  );
+
+  fadeIns.forEach((element) => observer.observe(element));
+});
+
+
 </script>
+
+
 
 
 

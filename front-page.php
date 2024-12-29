@@ -2,8 +2,8 @@
 
 <div class="marge">
 
-<section class="welcome-section">
-  <div class="welcome-container">
+<section class="welcome-section fade-in">
+  <div class="welcome-container ">
     <div class="welcome-image">
     <img src="<?php echo get_template_directory_uri(); ?>/assets/img/img1.jpg" alt="image1">
     </div>
@@ -25,7 +25,7 @@
 </section>
 
 
-<div class="circle-container">
+<div class="circle-container fade-in">
     <div class="row">
         <div class="col-md-4 text-center">
             <div class="circle">33%</div>
@@ -44,7 +44,7 @@
 
 
 <!-- Section roses -->
-<section class="roses">
+<section class="roses fade-in">
     <div class="rosesname">
         <div class="rosesnamess">
             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icone.png" alt="rosef" class="rose">
@@ -77,11 +77,12 @@
     </div>
 </section>
 
-<h2 class="title">Nos Spécialités</h2>
+
+<h2 class="title fade-in">Nos Spécialités</h2>
 <p class="specialites">Nos spécialistes sont là pour vous écouter et vous accompagner avec bienveillance, en offrant un soutien adapté à chaque étape de votre parcours.</p>
 
 <!-- Section team -->
-<div class="team-section">
+<div class="team-section fade-in">
   <div class="team-member">
   <img src="<?php echo get_template_directory_uri(); ?>/assets/img/avocate.jpg" alt="spec">
     <h3>Claire Marchand</h3>

@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<div class="marge">
+<div class="marge fade-in">
 
 <h1 class="noustitle">Êtes-vous victime de violence psychologique ? <br>
                       Faites le test pour le découvrir</h1>

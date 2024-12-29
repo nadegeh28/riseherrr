@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<div class="marge">
+<div class="marge fade-in">
     <h1 class="noustitle">Forum</h1>
     <br><br>
     <div class="forum-text">

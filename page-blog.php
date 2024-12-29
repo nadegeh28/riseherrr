@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-<div class="marge">
+<div class="marge fade-in">
     <div class="blog-containerr">
         <h1 class="blog-container text-center">Blog</h1>
     

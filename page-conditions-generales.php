@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-<div class="marge">
+<div class="marge fade-in">
 
 <div class="conditions-generales-containerr">
 <h1 class="conditions-generales-container">Conditions générales</h1>

@@ -1,8 +1,8 @@
 <?php get_header(); ?>
 
-<div class="marge">
+<div class="marge fade-in">
 
-<h1 class="noustitle">En cas d'urgences</h1>
+<h1 class="noustitle" >En cas d'urgences</h1>
 
 <div class="nouss-container">
     <div class="nous-container">

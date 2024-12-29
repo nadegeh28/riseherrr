@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<div class="marge">
+<div class="marge fade-in">
 
 <h4 class="titrecon">La reconstruction après les violences : Un chemin vers soi</h4>
 
