@@ -57,7 +57,9 @@
 
     </section>
 
-<h5>Agir pour protéger les victimes</h5>
+    <section>
+
+    <h5>Agir pour protéger les victimes</h5>
         <p>
         La loi Stop Féminicide prévoit aussi des mesures de protection, comme des interdictions de contact ou de résidence,
         mais leur mise en œuvre reste compliquée dans la pratique. La création d’un Comité scientifique d’analyse 
@@ -70,13 +72,14 @@
         la priorité doit être donnée à la prévention. Cela passe par l’éducation, la sensibilisation et 
         une prise en charge renforcée des victimes par la police et la justice.
         </p>
-
+</section>
 
     <section>
         
     <h5>Numéros utiles si vous êtes victime ou témoin de violences sexistes</h5>
         <p>
-        Si vous ou une personne de votre entourage êtes confrontée à des violences sexistes ou conjugales, plusieurs lignes d’écoute et d’urgence sont disponibles :
+        Si vous ou une personne de votre entourage êtes confrontée à des violences sexistes ou conjugales, 
+        plusieurs lignes d’écoute et d’urgence sont disponibles :
         </p>
 
         <p>
@@ -86,4 +89,27 @@
         </p>
 
 
-    <section>
+        <p>
+        <strong class="contact">112 :</strong>Pour joindre la police ou les services médicaux en cas d’urgence.<br>
+        <strong class="contact">0800 30 030 :</strong>Ligne d’écoute gratuite et confidentielle dédiée aux violences conjugales..<br>
+        <strong class="contact">0800 98 100 :</strong>SOS Violences sexuelles, pour une écoute anonyme et un soutien spécialisé.
+</p>
+
+</section>
+
+<section>
+<p>
+    Chaque appel peut sauver une vie. Il est essentiel de ne pas hésiter à signaler des violences ou à demander de l’aide.
+</p>
+
+<p>
+La lutte contre les féminicides est une responsabilité collective. 
+Il est temps que la Belgique transforme ses lois et engagements en actions concrètes, 
+pour protéger les victimes, prévenir les drames, 
+et construire une société où aucune femme ne sera plus jamais tuée parce qu’elle est une femme.
+</p>
+</section>
+
+</div>
+</div>
+<?php get_footer(); ?>
