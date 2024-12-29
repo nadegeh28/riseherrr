@@ -1602,15 +1602,14 @@ h6{
   width: 100%;
   object-fit: cover;
   border-bottom: 3px solid #8C3A76; 
-  border-radius: 30px ;
+  
 }
 
 /* Blog Image styles */
 .blog-image3 {
-  width: 300px;
+  width: 100%;
   object-fit: cover;
   border-bottom: 3px solid #8C3A76; 
-  border-radius: 30px ;
 }
 
 
