@@ -24,7 +24,7 @@
     <section>
         <!-- Témoignages statiques -->
         <hr class="title-underline fade-in">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icone.png" alt="rosef" class="roseforum">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icone.png" alt="rosef" class="roseforum fade-in">
         <p class="rosenbr fade-in">rose002</p>
         <div class="testimony-container fade-in">
             <p class="forum-message fade-in">Après trois ans dans une relation toxique, je me sentais complètement brisée. 
@@ -36,7 +36,7 @@
         </div>
 
         <hr class="title-underline">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icone.png" alt="rosef" class="roseforum">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icone.png" alt="rosef" class="roseforum fade-in">
         <p class="rosenbr">rose042</p>
         <div class="testimony-container">
             <p class="forum-message">Je suis une retraitée qui, après des décennies de violences verbales et psychologiques, 
@@ -46,11 +46,11 @@
                 Les discussions avec d’autres femmes de ma génération sur le forum m’ont donné une immense force.</p>
         </div>
 
-        <hr class="title-underline">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icone.png" alt="rosef" class="roseforum">
-        <p class="rosenbr">rose270</p>
-        <div class="testimony-container">
-            <p class="forum-message">Je me sentais isolée et honteuse après avoir subi des pressions dans une relation. 
+        <hr class="title-underline fade-in">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icone.png" alt="rosef" class="roseforum fade-in">
+        <p class="rosenbr fade-in">rose270</p>
+        <div class="testimony-container fade-in">
+            <p class="forum-message fade-in">Je me sentais isolée et honteuse après avoir subi des pressions dans une relation. 
                 RiseHer m’a ouvert les yeux. Le quiz m’a aidée à reconnaître des schémas de manipulation. 
                 Ensuite, partager mon histoire anonymement sur le forum m’a permis de recevoir des conseils bienveillants. 
                 Les témoignages d’autres Roses m’ont inspirée à mettre des limites et à me recentrer sur moi-même. Aujourd’hui, 
@@ -67,11 +67,11 @@
 
         foreach ($comments as $comment) :
         ?>
-            <hr class="title-underline">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icone.png" alt="rosef" class="roseforum">
-            <p class="rosenbr"><?php echo esc_html($comment->comment_author); ?></p>
-            <div class="testimony-container">
-                <p class="forum-message"><?php echo esc_html($comment->comment_content); ?></p>
+            <hr class="title-underline fade-in">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icone.png" alt="rosef" class="roseforum fade-in">
+            <p class="rosenbr fade-in"><?php echo esc_html($comment->comment_author); ?></p>
+            <div class="testimony-container fade-in">
+                <p class="forum-message fade-in"><?php echo esc_html($comment->comment_content); ?></p>
             </div>
         <?php endforeach; ?>
 
@@ -87,7 +87,7 @@
             ]);
 
             if ($user_comment_count < 5) : ?>
-               <div class="forumtext">
+               <div class="forumtext fade-in">
         <form method="post" action="">
             <textarea name="user_testimony" class="forum-place" placeholder="Écrivez votre témoignage en toute anonymat..."></textarea>
             <button type="submit" name="submit_testimony" class="btn-forum">Envoyer</button>
